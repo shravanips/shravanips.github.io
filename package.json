@@ -2,7 +2,7 @@
   "name": "portfolio_1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,9 +11,9 @@
     "url": "git+https://github.com/shravanips/Portfolio_1.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shravani Sawant",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/shravanips/Portfolio_1/issues"
   },
