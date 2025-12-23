@@ -1,17 +1,8 @@
-import path from "path";
-import { fileURLToPath } from "url";
+const path = require("path");
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// project root (Portfolio_1/)
-export const ROOT_DIR = path.join(__dirname, "..", "..");
-
-// src/
-export const SRC_DIR = path.join(ROOT_DIR, "src");
-
-// src/views
-export const VIEWS_DIR = path.join(SRC_DIR, "views");
-
-// src/public
-export const PUBLIC_DIR = path.join(SRC_DIR, "public");
+module.exports = {
+  root: path.join(__dirname, "..", ".."),
+  views: path.join(__dirname, "..", "views"),
+  public: path.join(__dirname, "..", "public"),
+  data: path.join(__dirname, "..", "data")
+};

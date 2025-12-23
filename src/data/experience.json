@@ -1,0 +1,13 @@
+[
+  {
+    "org": "IntelliSys Lab",
+    "role": "Graduate Student Research Assistant",
+    "location": "Hoboken, NJ",
+    "dates": "Oct 2025 – Present",
+    "highlights": [
+      "Studying reinforcement learning system behavior under partial failures, focusing on stability and performance degradation.",
+      "Building experiment workflows, logging, and analysis to compare fault conditions across runs.",
+      "Collaborating with the lab team on research-driven implementation and evaluation."
+    ]
+  }
+]

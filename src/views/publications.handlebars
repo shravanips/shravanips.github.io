@@ -1,0 +1,16 @@
+<section class="section">
+  <h1 class="page-title">Publications</h1>
+
+  {{#each publications}}
+    <div class="card">
+      <div class="card__title">{{title}}</div>
+      <div class="card__meta">{{venue}} · {{year}}</div>
+      {{#if link}}
+        <a class="link" href="{{link}}" target="_blank">Publication Link</a>
+      {{/if}}
+      {{#if note}}
+        <div class="muted">{{note}}</div>
+      {{/if}}
+    </div>
+  {{/each}}
+</section>

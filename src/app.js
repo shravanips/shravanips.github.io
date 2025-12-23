@@ -1,36 +1,41 @@
-import express from "express";
-import { engine } from "express-handlebars";
-import indexRouter from "./routes/index.js";
-import { VIEWS_DIR, PUBLIC_DIR } from "./config/paths.js";
+const express = require("express");
+const path = require("path");
+const { engine } = require("express-handlebars");
+
+const indexRoutes = require("./routes/index");
+const pagesRoutes = require("./routes/pages");
+const mediaRoutes = require("./routes/media");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Handlebars setup
 app.engine(
   "handlebars",
   engine({
-    extname: ".handlebars",
     defaultLayout: "main",
-    layoutsDir: `${VIEWS_DIR}/layouts`,
-    partialsDir: `${VIEWS_DIR}/partials`,
+    layoutsDir: path.join(__dirname, "views", "layouts"),
+    partialsDir: path.join(__dirname, "views", "partials"),
+    helpers: {
+      eq: (a, b) => a === b
+    }
   })
 );
+
+
 app.set("view engine", "handlebars");
-app.set("views", VIEWS_DIR);
+app.set("views", path.join(__dirname, "views"));
 
-// Static files
-app.use(express.static(PUBLIC_DIR));
+app.use(express.static(path.join(__dirname, "public")));
 
-// Routes
-app.use("/", indexRouter);
+app.use("/", indexRoutes);
+app.use("/", pagesRoutes);
+app.use("/", mediaRoutes);
 
-// Basic 404
+// 404 (keep LAST)
 app.use((req, res) => {
-  res.status(404).render("home", {
+  res.status(404).render("notfound", {
     title: "Not Found",
-    headline: "404 — Page not found",
-    subtext: "This page doesn’t exist yet. Use the navbar to go back.",
+    active: ""
   });
 });
 

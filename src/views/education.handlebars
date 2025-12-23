@@ -1,0 +1,11 @@
+<section class="section">
+  <h1 class="page-title">Education</h1>
+
+  {{#each education}}
+    <div class="card">
+      <div class="card__title">{{school}}</div>
+      <div class="card__meta">{{degree}} · {{location}} · {{dates}}</div>
+      <div class="muted">{{notes}}</div>
+    </div>
+  {{/each}}
+</section>

@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{title}}</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-
   <body>
-    {{> navbar}}
+    {{> navbar active=active}}
 
-    <main class="page">
+    <main class="container">
       {{{body}}}
     </main>
 
-    {{> footer}}
+    <footer class="footer">
+      <div>© Shravani Sawant — 2025</div>
+    </footer>
+
+    <script src="/js/main.js"></script>
   </body>
 </html>

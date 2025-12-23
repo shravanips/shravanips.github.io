@@ -1,0 +1,16 @@
+[
+  {
+    "school": "Stevens Institute of Technology",
+    "degree": "M.S. in Computer Science (Cybersecurity)",
+    "location": "Hoboken, NJ",
+    "dates": "Expected May 2026",
+    "notes": "Cumulative GPA: 3.885 / 4.0"
+  },
+  {
+    "school": "Govt. Institute of Forensic Science",
+    "degree": "B.S. in Forensic Science (Digital & Cyber Forensics)",
+    "location": "Mumbai, India",
+    "dates": "June 2024",
+    "notes": "Cumulative GPA: 9.2 / 10.0"
+  }
+]
