@@ -1,15 +1,45 @@
-<section class="section">
-  <h1 class="page-title">Experience</h1>
+<section class="section xp-page">
+  <h1 class="page-title xp-title">Experience</h1>
 
-  {{#each experience}}
-    <div class="card">
-      <div class="card__title">{{role}}</div>
-      <div class="card__meta">{{org}} · {{location}} · {{dates}}</div>
-      <ul class="list">
-        {{#each highlights}}
-          <li>{{this}}</li>
-        {{/each}}
-      </ul>
-    </div>
-  {{/each}}
+  <div class="xp-grid">
+    {{#each experience}}
+      <div class="flip-card" tabindex="0" role="button" aria-label="Flip experience card">
+        <div class="flip-card__inner">
+
+          <!-- FRONT -->
+          <div class="flip-face flip-face--front">
+            <div class="xp-front">
+              <div class="xp-logo">{{logoText}}</div>
+
+              <p class="xp-role">{{role}}</p>
+              <p class="xp-org">{{org}}</p>
+              <p class="xp-loc">{{location}}</p>
+              <p class="xp-dates">{{dates}}</p>
+            </div>
+
+            <div class="flip-hint">Click to view details</div>
+          </div>
+
+          <!-- BACK -->
+          <div class="flip-face flip-face--back">
+            <div class="xp-back">
+              <div class="xp-back__top">
+                <div class="xp-back__role">{{role}}</div>
+                <div class="xp-back__sub">{{org}} · {{location}} · {{dates}}</div>
+              </div>
+
+              <ul class="xp-back__list">
+                {{#each highlights}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+
+              <div class="flip-hint flip-hint--back">Click to go back</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    {{/each}}
+  </div>
 </section>

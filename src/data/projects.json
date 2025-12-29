@@ -1,0 +1,150 @@
+{
+  "cybersecurity": [
+    {
+      "id": "seri",
+      "area": "Research Project",
+      "title": "SERI: Cyber Risk Assessment Framework for Financial Systems",
+      "institution": "Stevens Institute of Technology",
+      "term": "Fall 2025",
+      "bullets": [
+        "Designed a structured framework to identify, categorize, and prioritize cyber risks in financial systems.",
+        "Analyzed assets, threat vectors, and existing controls to reason about real-world risk exposure.",
+        "Enabled clearer security decision-making aligned with compliance and business goals."
+      ],
+      "tech": ["Risk Modeling", "Threat Analysis", "CIA Triad", "Security Frameworks"],
+      "links": {}
+    },
+    {
+      "id": "traptrack",
+      "area": "Research Project",
+      "title": "TrapTrack: Automated Detection of Privacy Leaks in Cookie Consent Workflows",
+      "institution": "Stevens Institute of Technology",
+      "term": "Spring 2025",
+      "bullets": [
+        "Investigated privacy leaks triggered by cookie consent mechanisms on live websites.",
+        "Built a browser-based system to trace network traffic before and after consent actions.",
+        "Revealed hidden third-party data flows and unintended data disclosures."
+      ],
+      "tech": ["Browser Automation", "Network Analysis", "Privacy Engineering", "Web Security"],
+      "links": {}
+    },
+    {
+      "id": "aegisai",
+      "area": "Application Project",
+      "title": "AegisAI: LLM-Assisted Cybersecurity Detection and Threat Analysis Platform",
+      "institution": "Stevens Institute of Technology",
+      "term": "Spring 2025",
+      "bullets": [
+        "Built a unified platform for phishing, malware, and URL threat detection.",
+        "Combined rule-based detection with LLM-driven reasoning for deeper analysis.",
+        "Improved explainability through clear, user-facing threat summaries."
+      ],
+      "tech": ["Python", "LLMs", "Phishing Detection", "Malware Analysis", "Explainable AI"],
+      "links": {}
+    },
+    {
+      "id": "mcafee",
+      "area": "Case Study",
+      "title": "Enterprise Threat Assessment & Risk Modeling (McAfee)",
+      "institution": "Stevens Institute of Technology",
+      "term": "Fall 2024",
+      "bullets": [
+        "Conducted enterprise-wide threat assessment to identify critical assets.",
+        "Evaluated risks using confidentiality, integrity, and availability principles.",
+        "Proposed mitigation strategies based on risk severity and business impact."
+      ],
+      "tech": ["Risk Assessment", "Threat Modeling", "CIA Triad", "Enterprise Security"],
+      "links": {}
+    }
+  ],
+
+  "systems": [
+    {
+      "id": "bankruptcy",
+      "area": "Systems Project",
+      "title": "Bankruptcy Risk Prediction Using Data Mining and Feature Analysis",
+      "institution": "Stevens Institute of Technology",
+      "term": "Fall 2025",
+      "bullets": [
+        "Built predictive models to analyze bankruptcy risk from financial datasets.",
+        "Performed feature analysis to identify influential financial indicators.",
+        "Compared multiple modeling approaches to study performance behavior."
+      ],
+      "tech": ["Data Mining", "Feature Engineering", "Predictive Modeling", "Python"],
+      "links": {}
+    },
+    {
+      "id": "suicide",
+      "area": "Research Project",
+      "title": "Exploratory Data Analysis and AI-Driven Insights on Suicide Trends",
+      "institution": "Stevens Institute of Technology",
+      "term": "Spring 2025",
+      "bullets": [
+        "Analyzed large-scale datasets across time, age, and geography.",
+        "Applied visualization and AI techniques to uncover hidden patterns.",
+        "Translated results into interpretable, human-centered insights."
+      ],
+      "tech": ["Data Analysis", "Visualization", "Python", "AI"],
+      "links": {}
+    },
+    {
+      "id": "cpu",
+      "area": "Systems Project",
+      "title": "CPU Scheduling Algorithms: Simulation and Performance Analysis",
+      "institution": "Stevens Institute of Technology",
+      "term": "Fall 2024",
+      "bullets": [
+        "Implemented FCFS, SJF, and Round Robin scheduling algorithms in Java.",
+        "Evaluated turnaround time, waiting time, and CPU utilization.",
+        "Analyzed trade-offs between fairness and performance."
+      ],
+      "tech": ["Java", "Operating Systems", "Scheduling Algorithms"],
+      "links": {}
+    }
+  ],
+
+  "applications": [
+    {
+      "id": "arrest",
+      "area": "Application Project",
+      "title": "Full-Stack Web Application for Interactive Arrest Data Analysis",
+      "institution": "Stevens Institute of Technology",
+      "term": "Fall 2025",
+      "bullets": [
+        "Developed a full-stack application for interactive data exploration.",
+        "Designed backend APIs for efficient querying and filtering.",
+        "Focused on usability and clean user experience."
+      ],
+      "tech": ["Full-Stack", "APIs", "Data Visualization", "Web Development"],
+      "links": {}
+    },
+    {
+      "id": "heritage",
+      "area": "Application Project",
+      "title": "AI-Powered Heritage Search Engine with Semantic Retrieval",
+      "institution": "Stevens Institute of Technology",
+      "term": "Fall 2024",
+      "bullets": [
+        "Built a semantic search system beyond keyword matching.",
+        "Integrated a chatbot interface for contextual query answering.",
+        "Designed the full retrieval and interaction pipeline."
+      ],
+      "tech": ["Semantic Search", "Chatbots", "Information Retrieval"],
+      "links": {}
+    },
+    {
+      "id": "campus",
+      "area": "Application Project",
+      "title": "Web-Based Room and Resource Allocation System",
+      "institution": "University of Mumbai",
+      "term": "May 2024",
+      "bullets": [
+        "Built a portal to manage room and hall bookings across departments.",
+        "Implemented database-backed availability and reservation tracking.",
+        "Reduced manual coordination through streamlined workflows."
+      ],
+      "tech": ["Web Development", "Databases", "System Design"],
+      "links": {}
+    }
+  ]
+}

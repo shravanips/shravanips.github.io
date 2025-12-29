@@ -1,16 +1,46 @@
 [
   {
+    "id": "ijirt-toys-2024",
     "title": "Gender Specificity Amid Toys",
-    "venue": "International Journal of Innovation Research in Technology (IJIRT), Vol. 11",
+    "venue": "International Journal of Innovative Research in Technology (IJIRT)",
+    "type": "Journal",
     "year": "2024",
-    "link": "",
-    "note": ""
+    "badgeText": "IJIRT",
+    "authors": [
+      { "name": "Shravani Sawant", "isYou": true },
+      { "name": "Malavika Manoj", "isYou": false },
+      { "name": "Bhagyashree Kulkarni", "isYou": false }
+    ],
+    "contributions": [
+      "Explored gendered preference signals in toy selection through a structured literature-backed framing.",
+      "Organized the study narrative (problem → motivation → observations) to keep the analysis consistent end-to-end.",
+      "Supported writing, revision, and final formatting for publication submission."
+    ],
+    "keywords": ["Human Factors", "Gender Studies", "Behavioral Analysis", "Survey Research"],
+    "links": [
+      { "label": "PDF", "url": "https://ijirt.org/publishedpaper/IJIRT166041_PAPER.pdf" }
+    ]
   },
   {
+    "id": "mccs-htlc-2021",
     "title": "Blockchain Interoperability Using Hash Time Locks",
     "venue": "Proceedings of Fifth International Conference on Microelectronics, Computing and Communication Systems (MCCS)",
+    "type": "Conference",
     "year": "2021",
-    "link": "",
-    "note": "Secondary contributor (review, validation, final-stage technical support)."
+    "badgeText": "MCCS",
+    "authors": [
+      { "name": "Shravani Sawant", "isYou": true },
+      { "name": "Snoviya Dcunha", "isYou": false },
+      { "name": "Srushti Patel", "isYou": false },
+      { "name": "Varsha Kulkarni", "isYou": false },
+      { "name": "Mahesh Shirole", "isYou": false }
+    ],
+    "contributions": [
+      "Assisted with review and validation of the technical flow around HTLC-based interoperability.",
+      "Helped verify correctness of explanations and ensured consistency in terminology and diagrams.",
+      "Provided final-stage technical support for refining the manuscript before submission."
+    ],
+    "keywords": ["Blockchain", "Interoperability", "HTLC", "Cross-chain", "Security"],
+    "links": []
   }
 ]

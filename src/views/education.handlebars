@@ -1,11 +1,113 @@
-<section class="section">
-  <h1 class="page-title">Education</h1>
+<section class="section section--center">
+  <h1 class="page-title page-title--center">Education</h1>
 
-  {{#each education}}
-    <div class="card">
-      <div class="card__title">{{school}}</div>
-      <div class="card__meta">{{degree}} · {{location}} · {{dates}}</div>
-      <div class="muted">{{notes}}</div>
-    </div>
-  {{/each}}
+  <div class="edu-grid">
+    {{#each education}}
+      <div class="flip-card" tabindex="0" role="button" aria-label="Flip education card">
+        <div class="flip-card__inner">
+
+          {{!-- FRONT --}}
+          <div class="flip-face flip-face--front">
+            <div class="edu-front">
+              <div class="edu-logo">{{logoText}}</div>
+
+              <p class="edu-school">{{school}}</p>
+              <p class="edu-loc">{{location}}</p>
+              <p class="edu-degree">{{degree}}</p>
+
+              <div class="edu-meta">
+                <span class="edu-pill">{{dates}}</span>
+                <span class="edu-pill">GPA: {{gpa}}</span>
+              </div>
+
+              <div class="flip-hint">Click to view details</div>
+            </div>
+          </div>
+
+          {{!-- BACK --}}
+          <div class="flip-face flip-face--back">
+            <div class="edu-back">
+              <div class="edu-back__top">
+                <div class="edu-back__title">{{school}}</div>
+                <div class="edu-back__subtitle">{{degree}} · {{location}} · {{dates}}</div>
+              </div>
+
+              <div class="edu-back__scroll">
+                {{#each sections}}
+                  <div class="edu-block">
+                    <div class="edu-block__label">{{title}}</div>
+                    <ul class="edu-list">
+                      {{#each items}}
+                        <li>{{this}}</li>
+                      {{/each}}
+                    </ul>
+                  </div>
+                {{/each}}
+              </div>
+
+              <div class="flip-hint flip-hint--back">Click to go back</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>
+
+<section class="section certs" aria-labelledby="certs-title">
+  <h2 id="certs-title" class="page-title page-title--center">Certifications</h2>
+
+  {{!-- BIG FLIP CARDS (ALL CERTIFICATIONS) --}}
+  <div class="cert-grid">
+    {{#each certifications}}
+      <div id="{{id}}" class="flip-card cert-card" tabindex="0" role="button" aria-label="Certification: {{title}}">
+        <div class="flip-card__inner">
+
+          {{!-- Front --}}
+          <div class="flip-face flip-face--front">
+            <div class="cert-front">
+              <div class="cert-logo">{{logoText}}</div>
+              <h3 class="cert-title">{{title}}</h3>
+              <p class="cert-sub">{{issuer}}</p>
+              <p class="cert-sub muted">Issued {{issued}}</p>
+
+              {{#if link}}
+                <a class="cert-link" href="{{link}}" target="_blank" rel="noopener noreferrer">
+                  View credential →
+                </a>
+              {{/if}}
+            </div>
+
+            <div class="flip-hint">Click to view skills</div>
+          </div>
+
+          {{!-- Back --}}
+          <div class="flip-face flip-face--back">
+            <div class="cert-back">
+              <div class="cert-back__top">
+                <div class="cert-back__title">Skills & takeaways</div>
+                <div class="cert-back__sub">{{issuer}} • {{issued}}</div>
+              </div>
+
+              <ul class="cert-list">
+                {{#each skills}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+
+              {{#if link}}
+                <a class="cert-link" href="{{link}}" target="_blank" rel="noopener noreferrer">
+                  Open credential →
+                </a>
+              {{/if}}
+            </div>
+
+            <div class="flip-hint flip-hint--back">Click to go back</div>
+          </div>
+
+        </div>
+      </div>
+    {{/each}}
+  </div>
 </section>

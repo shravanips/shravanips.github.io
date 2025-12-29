@@ -1,6 +1,71 @@
-<section class="section">
+<section class="section section--center">
   <h1 class="page-title">Media</h1>
-  <div class="card">
-    <p class="muted">Add photography, talks, posters, demos, or project reels here.</p>
-  </div>
+  <p class="muted">Photography, writing, talks, posters, sketches — a small archive of things I create.</p>
+
+  {{#each media.sections}}
+    <div class="media-section">
+      <div class="media-section__head">
+        <h2 class="media-section__title">{{title}}</h2>
+        {{#if subtitle}}<p class="media-section__subtitle muted">{{subtitle}}</p>{{/if}}
+      </div>
+
+      <div class="media-grid">
+        {{#each items}}
+          {{!-- PHOTO (opens modal) --}}
+          {{#if (eq type "photo")}}
+            <div class="media-card" data-media="photo" data-src="{{src}}" data-title="{{title}}" data-caption="{{caption}}">
+              <div class="media-thumb" style="background-image:url('{{thumb}}')"></div>
+              <div class="media-body">
+                <div class="media-title">{{title}}</div>
+                <div class="media-meta muted">{{meta}}</div>
+                <div class="media-hint">Click to enlarge</div>
+              </div>
+            </div>
+          {{/if}}
+
+          {{!-- LINK (Medium/external) --}}
+          {{#if (eq type "link")}}
+            <a class="media-card media-card--link" href="{{url}}" target="_blank" rel="noopener noreferrer">
+              <div class="media-icon">{{icon}}</div>
+              <div class="media-body">
+                <div class="media-title">{{title}}</div>
+                <div class="media-meta muted">{{meta}}</div>
+                <div class="media-hint">Open link →</div>
+              </div>
+            </a>
+          {{/if}}
+
+          {{!-- PDF --}}
+          {{#if (eq type "pdf")}}
+            <a class="media-card media-card--link" href="{{url}}" target="_blank" rel="noopener noreferrer">
+              <div class="media-icon">pdf</div>
+              <div class="media-body">
+                <div class="media-title">{{title}}</div>
+                <div class="media-meta muted">{{meta}}</div>
+                <div class="media-hint">Open PDF →</div>
+              </div>
+            </a>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  {{/each}}
 </section>
+
+{{!-- Modal for photos --}}
+<div class="media-modal" id="mediaModal" aria-hidden="true">
+  <div class="media-modal__overlay" data-close="true"></div>
+
+  <div class="media-modal__content" role="dialog" aria-modal="true">
+    <button class="media-modal__close" type="button" data-close="true">✕</button>
+
+    <div class="media-modal__imgWrap">
+      <img id="mediaModalImg" alt="" />
+    </div>
+
+    <div class="media-modal__meta">
+      <div class="media-modal__title" id="mediaModalTitle"></div>
+      <div class="media-modal__caption muted" id="mediaModalCaption"></div>
+    </div>
+  </div>
+</div>

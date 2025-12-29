@@ -1,13 +1,15 @@
 [
   {
     "org": "IntelliSys Lab",
+    "logoText": "IntelliSys",
     "role": "Graduate Student Research Assistant",
     "location": "Hoboken, NJ",
     "dates": "Oct 2025 – Present",
     "highlights": [
-      "Studying reinforcement learning system behavior under partial failures, focusing on stability and performance degradation.",
-      "Building experiment workflows, logging, and analysis to compare fault conditions across runs.",
-      "Collaborating with the lab team on research-driven implementation and evaluation."
+      "Studying reinforcement learning (RL) system behavior under partial failures, focusing on stability and performance degradation trends.",
+      "Designing repeatable experiment pipelines (runs, seeds, configs) with consistent logging to compare fault conditions across evaluations.",
+      "Analyzing training metrics and failure modes to understand how system reliability changes under resource drops and partial outages.",
+      "Collaborating with the lab team on research-driven implementation, evaluation, and documentation of findings."
     ]
   }
 ]

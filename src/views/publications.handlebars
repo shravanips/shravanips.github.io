@@ -1,16 +1,245 @@
-<section class="section">
-  <h1 class="page-title">Publications</h1>
+<section class="section section--center">
+  <h1 class="page-title page-title--center">Publications</h1>
 
-  {{#each publications}}
-    <div class="card">
-      <div class="card__title">{{title}}</div>
-      <div class="card__meta">{{venue}} · {{year}}</div>
-      {{#if link}}
-        <a class="link" href="{{link}}" target="_blank">Publication Link</a>
-      {{/if}}
-      {{#if note}}
-        <div class="muted">{{note}}</div>
-      {{/if}}
+  <div class="pub-grid">
+    {{#each publications}}
+      <div class="flip-card pub-card" tabindex="0" role="button" aria-label="Publication: {{title}}">
+        <div class="flip-card__inner">
+
+          {{!-- FRONT --}}
+          <div class="flip-face flip-face--front">
+            <div class="pub-front">
+              <div class="pub-top">
+                <span class="pill">{{badgeText}}</span>
+                <span class="pill">{{type}}</span>
+                <span class="pill">{{year}}</span>
+              </div>
+
+              <h2 class="pub-title">{{title}}</h2>
+
+              {{!-- Authors (JSON -> authors array) --}}
+              {{#if authors}}
+                <div class="pub-authors">
+                  {{#each authors}}
+                    {{#if isYou}}
+                      <span class="pub-author--you">{{name}}</span>
+                    {{else}}
+                      <span>{{name}}</span>
+                    {{/if}}
+                    {{#unless @last}}, {{/unless}}
+                  {{/each}}
+                </div>
+              {{/if}}
+
+              <div class="pub-venue muted">{{venue}}</div>
+
+              <div class="flip-hint">Click to view details</div>
+            </div>
+          </div>
+
+          {{!-- BACK --}}
+          <div class="flip-face flip-face--back">
+            <div class="pub-back">
+              <div class="pub-back__top">
+                <div class="pub-back__title">Highlights & contribution</div>
+                <div class="muted">{{type}} · {{venue}} · {{year}}</div>
+              </div>
+
+              {{!-- Contributions (JSON -> contributions) --}}
+              {{#if contributions}}
+                <ul class="pub-list">
+                  {{#each contributions}}
+                    <li>{{this}}</li>
+                  {{/each}}
+                </ul>
+              {{/if}}
+
+              {{!-- Keywords --}}
+              {{#if keywords}}
+                <div class="chip-row">
+                  {{#each keywords}}
+                    <span class="chip">{{this}}</span>
+                  {{/each}}
+                </div>
+              {{/if}}
+
+              {{!-- Links (JSON -> array of {label,url}) --}}
+              {{#if links}}
+                <div class="link-row">
+                  {{#each links}}
+                    <a class="mini-link" href="{{url}}" target="_blank" rel="noopener noreferrer">
+                      {{label}} →
+                    </a>
+                  {{/each}}
+                </div>
+              {{/if}}
+
+              <div class="flip-hint flip-hint--back">Click to go back</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>
+
+
+<section class="section section--center">
+  <h2 class="page-title page-title--center">Academic Projects</h2>
+
+  {{!-- Cybersecurity & Privacy --}}
+  <div class="proj-section">
+    <h3 class="proj-heading">Cybersecurity &amp; Privacy</h3>
+
+    <div class="proj-grid">
+      {{#each projects.cybersecurity}}
+        <div class="flip-card proj-card" tabindex="0" role="button" aria-label="Project: {{title}}">
+          <div class="flip-card__inner">
+
+            {{!-- FRONT --}}
+            <div class="flip-face flip-face--front">
+              <div class="proj-front">
+                <div class="proj-image">IMG</div>
+
+                <div class="proj-badge">{{area}}</div>
+
+                <div class="proj-title">{{title}}</div>
+                <div class="proj-inst muted">{{institution}}</div>
+
+                <div class="proj-meta">
+                  <span class="pill">{{term}}</span>
+                </div>
+
+                <div class="flip-hint">Click to view details</div>
+              </div>
+            </div>
+
+            {{!-- BACK --}}
+            <div class="flip-face flip-face--back">
+              <div class="proj-back">
+                <div class="proj-back__top">
+                  <div class="proj-back__title">What I did</div>
+                  <div class="muted">{{institution}} · {{term}}</div>
+                </div>
+
+                <ul class="proj-list">
+                  {{#each bullets}}
+                    <li>{{this}}</li>
+                  {{/each}}
+                </ul>
+
+                <div class="chip-row">
+                  {{#each tech}}
+                    <span class="chip">{{this}}</span>
+                  {{/each}}
+                </div>
+
+                {{#if links}}
+                  <div class="link-row">
+                    {{#if links.github}}<a class="mini-link" href="{{links.github}}" target="_blank" rel="noopener noreferrer">GitHub →</a>{{/if}}
+                    {{#if links.report}}<a class="mini-link" href="{{links.report}}" target="_blank" rel="noopener noreferrer">Report →</a>{{/if}}
+                    {{#if links.demo}}<a class="mini-link" href="{{links.demo}}" target="_blank" rel="noopener noreferrer">Demo →</a>{{/if}}
+                  </div>
+                {{/if}}
+
+                <div class="flip-hint flip-hint--back">Click to go back</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      {{/each}}
     </div>
-  {{/each}}
+  </div>
+
+  {{!-- Systems & Computer Science --}}
+  <div class="proj-section">
+    <h3 class="proj-heading">Systems &amp; Computer Science</h3>
+
+    <div class="proj-grid">
+      {{#each projects.systems}}
+        <div class="flip-card proj-card" tabindex="0" role="button" aria-label="Project: {{title}}">
+          <div class="flip-card__inner">
+
+            <div class="flip-face flip-face--front">
+              <div class="proj-front">
+                <div class="proj-image">IMG</div>
+                <div class="proj-badge">{{area}}</div>
+                <div class="proj-title">{{title}}</div>
+                <div class="proj-inst muted">{{institution}}</div>
+                <div class="proj-meta"><span class="pill">{{term}}</span></div>
+                <div class="flip-hint">Click to view details</div>
+              </div>
+            </div>
+
+            <div class="flip-face flip-face--back">
+              <div class="proj-back">
+                <div class="proj-back__top">
+                  <div class="proj-back__title">What I did</div>
+                  <div class="muted">{{institution}} · {{term}}</div>
+                </div>
+
+                <ul class="proj-list">
+                  {{#each bullets}}<li>{{this}}</li>{{/each}}
+                </ul>
+
+                <div class="chip-row">
+                  {{#each tech}}<span class="chip">{{this}}</span>{{/each}}
+                </div>
+
+                <div class="flip-hint flip-hint--back">Click to go back</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+  {{!-- Application Development --}}
+  <div class="proj-section">
+    <h3 class="proj-heading">Application Development</h3>
+
+    <div class="proj-grid">
+      {{#each projects.applications}}
+        <div class="flip-card proj-card" tabindex="0" role="button" aria-label="Project: {{title}}">
+          <div class="flip-card__inner">
+
+            <div class="flip-face flip-face--front">
+              <div class="proj-front">
+                <div class="proj-image">IMG</div>
+                <div class="proj-badge">{{area}}</div>
+                <div class="proj-title">{{title}}</div>
+                <div class="proj-inst muted">{{institution}}</div>
+                <div class="proj-meta"><span class="pill">{{term}}</span></div>
+                <div class="flip-hint">Click to view details</div>
+              </div>
+            </div>
+
+            <div class="flip-face flip-face--back">
+              <div class="proj-back">
+                <div class="proj-back__top">
+                  <div class="proj-back__title">What I did</div>
+                  <div class="muted">{{institution}} · {{term}}</div>
+                </div>
+
+                <ul class="proj-list">
+                  {{#each bullets}}<li>{{this}}</li>{{/each}}
+                </ul>
+
+                <div class="chip-row">
+                  {{#each tech}}<span class="chip">{{this}}</span>{{/each}}
+                </div>
+
+                <div class="flip-hint flip-hint--back">Click to go back</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
 </section>

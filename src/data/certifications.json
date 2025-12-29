@@ -1,8 +1,152 @@
 [
-    { "name": "Cybersecurity Foundations: Governance, Risk & Compliance (GRC)", "issuer": "Certificate", "date": "June 2025" },
-    { "name": "DevOps Foundation: Incident Management", "issuer": "Certificate", "date": "Sept 2025" },
-    { "name": "Networking Foundations: Protocols & CLI Tools", "issuer": "Certificate", "date": "June 2025" },
-    { "name": "Fundamentals of Azure AI Document Intelligence", "issuer": "Certificate", "date": "June 2025" },
-    { "name": "Cybersecurity, Vulnerability Assessment and Digital Forensics", "issuer": "Certificate", "date": "June 2025" }
-  ]
-  
+  {
+    "id": "devops-incident",
+    "title": "DevOps Foundations: Incident Management",
+    "issuer": "LinkedIn Learning",
+    "issued": "Sep 2025",
+    "logoText": "in",
+    "featured": true,
+    "skills": [
+      "Incident triage and prioritization under time pressure",
+      "On-call workflows, escalations, and post-incident reviews",
+      "Root-cause thinking: signals → impact → mitigation",
+      "Practical incident communication and stakeholder updates"
+    ],
+    "link": "https://www.linkedin.com/in/shravanisawant03/details/certifications/1757909771714/single-media-viewer/?profileId=ACoAAEMvpH4Bvwpb4H1LWocQUtSuIFFPjaqWGL8"
+  },
+  {
+    "id": "ifs-vadf",
+    "title": "Cyber Security, Vulnerability Assessment, and Digital Forensics",
+    "issuer": "Institute of Forensic Science",
+    "issued": "Jun 2025",
+    "logoText": "IFS",
+    "featured": true,
+    "skills": [
+      "Vulnerability assessment mindset: attack surface → findings → fixes",
+      "Digital forensics fundamentals (collection, preservation, analysis)",
+      "Evidence integrity and documentation for investigations",
+      "Connecting forensic artifacts to realistic threat scenarios"
+    ],
+    "link": "https://www.linkedin.com/in/shravanisawant03/details/certifications/1755529156539/single-media-viewer/?profileId=ACoAAEMvpH4Bvwpb4H1LWocQUtSuIFFPjaqWGL8"
+  },
+  {
+    "id": "grc-foundations",
+    "title": "Cybersecurity Foundations: Governance, Risk, and Compliance (GRC)",
+    "issuer": "LinkedIn Learning",
+    "issued": "Jun 2025",
+    "logoText": "in",
+    "featured": true,
+    "skills": [
+      "Risk-based thinking: assets, threats, controls, residual risk",
+      "Policy, governance, and aligning security with business goals",
+      "Compliance basics and practical audit readiness",
+      "Control mapping and evidence-driven security documentation"
+    ],
+    "link": "https://www.linkedin.com/in/shravanisawant03/details/certifications/1751316032346/single-media-viewer/?profileId=ACoAAEMvpH4Bvwpb4H1LWocQUtSuIFFPjaqWGL8"
+  },
+  {
+    "id": "azure-doc-intel",
+    "title": "Fundamentals of Azure AI Document Intelligence",
+    "issuer": "Microsoft Azure Communities",
+    "issued": "Jun 2025",
+    "logoText": "MS",
+    "featured": false,
+    "skills": [
+      "Document extraction concepts (forms, key-value pairs, layout)",
+      "Understanding model outputs and validation workflows",
+      "OCR basics and structured data pipelines",
+      "Practical thinking around reliability + edge cases"
+    ],
+    "link": "https://www.linkedin.com/in/shravanisawant03/details/certifications/1749757036839/single-media-viewer/?profileId=ACoAAEMvpH4Bvwpb4H1LWocQUtSuIFFPjaqWGL8"
+  },
+  {
+    "id": "networking-cli",
+    "title": "Networking Foundations: Protocols and CLI Tools",
+    "issuer": "LinkedIn Learning",
+    "issued": "Jun 2025",
+    "logoText": "in",
+    "featured": false,
+    "skills": [
+      "Core network protocols and how they show up in real traffic",
+      "CLI-based troubleshooting and packet-level intuition",
+      "Interpreting common networking failures and misconfigs",
+      "Building a clean mental model for layered networking"
+    ],
+    "link": "https://www.linkedin.com/in/shravanisawant03/details/certifications/1749616874256/single-media-viewer/?profileId=ACoAAEMvpH4Bvwpb4H1LWocQUtSuIFFPjaqWGL8"
+  },
+  {
+    "id": "forage-sim",
+    "title": "Cybersecurity Job Simulation",
+    "issuer": "Forage",
+    "issued": "Mar 2025",
+    "logoText": "FG",
+    "featured": false,
+    "skills": [
+      "Role-style security tasks with realistic constraints",
+      "Communicating findings clearly (technical → practical)",
+      "Prioritizing risk and recommended next steps",
+      "Security thinking across people, process, and tooling"
+    ],
+    "link": "https://www.linkedin.com/in/shravanisawant03/details/certifications/1742433600004/single-media-viewer/?profileId=ACoAAEMvpH4Bvwpb4H1LWocQUtSuIFFPjaqWGL8"
+  },
+  {
+    "id": "python-ms-amb",
+    "title": "Introduction to Programming Using Python",
+    "issuer": "Microsoft Learn Student Ambassadors",
+    "issued": "Nov 2022",
+    "logoText": "ML",
+    "featured": true,
+    "skills": [
+      "Python programming fundamentals and clean coding habits",
+      "Data structures, control flow, and debugging basics",
+      "Writing small programs that are readable and reusable",
+      "Building confidence for larger projects over time"
+    ],
+    "link": "https://www.linkedin.com/in/shravanisawant03/details/certifications/1742433809121/single-media-viewer/?profileId=ACoAAEMvpH4Bvwpb4H1LWocQUtSuIFFPjaqWGL8"
+  },
+  {
+    "id": "devfest-2025",
+    "title": "DevFest 2025",
+    "issuer": "Google Developer",
+    "issued": "Dec 2025",
+    "logoText": "G",
+    "featured": false,
+    "skills": [
+      "Hands-on exposure to modern developer workflows",
+      "Networking with builders and learning community practices",
+      "Applied learnings from talks + demos",
+      "Building momentum for personal projects"
+    ],
+    "link": "https://developers.google.com/profile/badges/events/community/devfest/2025/attendee"
+  },
+  {
+    "id": "adk-mcp-memory",
+    "title": "Learning: Building Personalized Agents with ADK, MCP, and Memory Bank",
+    "issuer": "Google Developer",
+    "issued": "Dec 2025",
+    "logoText": "G",
+    "featured": false,
+    "skills": [
+      "Agent patterns: tools, memory, and multi-step workflows",
+      "Thinking in systems: inputs → reasoning → actions → outputs",
+      "Practical framing for reliable assistants",
+      "Experimenting with frameworks and integration patterns"
+    ],
+    "link": "https://developers.google.com/profile/badges/recognitions/learnings"
+  },
+  {
+    "id": "io-2025",
+    "title": "I/O 2025",
+    "issuer": "Google Developer",
+    "issued": "May 2025",
+    "logoText": "G",
+    "featured": false,
+    "skills": [
+      "Keeping up with modern cloud + AI ecosystem updates",
+      "Product thinking through platform announcements",
+      "Exploring new APIs and tooling directions",
+      "Turning learnings into next steps for projects"
+    ],
+    "link": "https://developers.google.com/profile/badges/events/io/2025/registered"
+  }
+]

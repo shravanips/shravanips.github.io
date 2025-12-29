@@ -1,4 +1,28 @@
-<section class="hero">
-  <h1 class="hero__title">Hey, I’m {{hero.name}}</h1>
-  <p class="hero__text">{{hero.tagline}}</p>
+<section class="home-hero">
+  <div class="home-hero__inner">
+    <h1 class="home-hero__title">{{home.titleLine}}</h1>
+    <h2 class="home-hero__headline">{{home.headline}}</h2>
+
+    <p class="home-hero__sub">{{home.p1}}</p>
+    <p class="home-hero__sub">{{home.p2}}</p>
+    <p class="home-hero__sub">{{home.p3}}</p>
+  </div>
+
+  <div class="home-bottom">
+    <div class="home-bottom__left">© Shravani Sawant</div>
+
+    <div class="home-bottom__center">{{home.location}}</div>
+
+    <div class="home-bottom__right">
+      {{#if social.linkedin}}
+        <a class="icon-pill" href="{{social.linkedin}}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+      {{/if}}
+      {{#if social.github}}
+        <a class="icon-pill" href="{{social.github}}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">gh</a>
+      {{/if}}
+      {{#if social.medium}}
+        <a class="icon-pill" href="{{social.medium}}" target="_blank" rel="noopener noreferrer" aria-label="Medium">md</a>
+      {{/if}}
+    </div>
+  </div>
 </section>

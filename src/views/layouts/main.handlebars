@@ -6,17 +6,29 @@
     <title>{{title}}</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
+
+  <body class="{{bodyClass}}">
     {{> navbar active=active}}
 
     <main class="container">
       {{{body}}}
     </main>
 
-    <footer class="footer">
-      <div>© Shravani Sawant — 2025</div>
-    </footer>
+    {{#unless hideFooter}}
+      <footer class="site-bottom">
+        <div class="site-bottom__left">© Shravani Sawant — 2025</div>
+        <div class="site-bottom__center">{{footerLocation}}</div>
+
+        <div class="site-bottom__right">
+          {{#if social.linkedin}}<a class="icon-pill" href="{{social.linkedin}}" target="_blank" rel="noreferrer">in</a>{{/if}}
+          {{#if social.github}}<a class="icon-pill" href="{{social.github}}" target="_blank" rel="noreferrer">gh</a>{{/if}}
+          {{#if social.medium}}<a class="icon-pill" href="{{social.medium}}" target="_blank" rel="noreferrer">md</a>{{/if}}
+        </div>
+      </footer>
+    {{/unless}}
 
     <script src="/js/main.js"></script>
+    <script src="/js/media.js" defer></script>
+
   </body>
 </html>

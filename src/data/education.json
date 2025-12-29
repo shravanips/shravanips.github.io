@@ -1,16 +1,61 @@
 [
   {
     "school": "Stevens Institute of Technology",
+    "logoText": "SIT",
+    "location": "Hoboken, NJ, USA",
     "degree": "M.S. in Computer Science (Cybersecurity)",
-    "location": "Hoboken, NJ",
     "dates": "Expected May 2026",
-    "notes": "Cumulative GPA: 3.885 / 4.0"
+    "gpa": "3.885 / 4.0",
+    "sections": [
+      {
+        "title": "Core Coursework",
+        "items": [
+          "CS 520 — Introduction to Operating Systems",
+          "CS 573 — Fundamentals of Cybersecurity",
+          "CS 600 — Advanced Algorithms and Implementations",
+          "SYS 624 WS — Data Exploration and Informatics for Engineering Management",
+          "CS 525 — System Programming",
+          "CS 810E — Automated Techniques for Security, Privacy & Reliability",
+          "CS 513 — Knowledge Discovery and Data Mining",
+          "FIN 545 — Risk Management for Financial Cybersecurity",
+          "CS 546 — Web Programming",
+          "HQSS 570 — Data Storytelling for Cybersecurity (Special Topic)"
+        ]
+      },
+      {
+        "title": "Focus Areas",
+        "items": [
+          "AI Security and secure system design",
+          "Security experimentation, automation, and reliability evaluation",
+          "Applied research + engineering (tools, pipelines, analysis)"
+        ]
+      }
+    ]
   },
   {
     "school": "Govt. Institute of Forensic Science",
-    "degree": "B.S. in Forensic Science (Digital & Cyber Forensics)",
+    "logoText": "GIFS",
     "location": "Mumbai, India",
+    "degree": "B.S. in Forensic Science (Digital & Cyber Forensics)",
     "dates": "June 2024",
-    "notes": "Cumulative GPA: 9.2 / 10.0"
+    "gpa": "9.2 / 10.0",
+    "sections": [
+      {
+        "title": "Core Focus",
+        "items": [
+          "Digital & Cyber Forensics foundations",
+          "Cybercrime investigation, evidence handling, and reporting",
+          "Forensic workflows and case documentation"
+        ]
+      },
+      {
+        "title": "Hands-on Strengths",
+        "items": [
+          "Analytical thinking and structured reporting",
+          "Practical exposure to cyber forensics research",
+          "Security mindset + investigation approach"
+        ]
+      }
+    ]
   }
 ]

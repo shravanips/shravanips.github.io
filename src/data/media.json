@@ -1,0 +1,56 @@
+{
+    "sections": [
+      {
+        "title": "Photography",
+        "subtitle": "Film-style frames, street, travel, and portraits.",
+        "items": [
+          {
+            "id": "ratnagiri-1",
+            "type": "photo",
+            "title": "Ratnagiri — Take Me Back",
+            "meta": "Travel · 2024",
+            "thumb": "/assets/media/photos/ratnagiri_thumb.jpg",
+            "src": "/assets/media/photos/ratnagiri_full.jpg",
+            "caption": "A travel frame from where my heart always returns."
+          }
+        ]
+      },
+      {
+        "title": "Writing",
+        "subtitle": "Medium posts, PDFs, talk notes, and long-form reflections.",
+        "items": [
+          {
+            "id": "medium-1",
+            "type": "link",
+            "title": "My Medium Profile",
+            "meta": "Medium · 2025",
+            "icon": "md",
+            "url": "https://medium.com/@YOUR_HANDLE"
+          },
+          {
+            "id": "pdf-1",
+            "type": "pdf",
+            "title": "Talk Notes (PDF)",
+            "meta": "PDF · 2025",
+            "url": "/assets/media/pdfs/talk-notes.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Art & Sketches",
+        "subtitle": "Drawings, paintings, and experiments.",
+        "items": [
+          {
+            "id": "sketch-1",
+            "type": "photo",
+            "title": "Sketchbook Study",
+            "meta": "Graphite · 2023",
+            "thumb": "/assets/media/art/sketch_thumb.jpg",
+            "src": "/assets/media/art/sketch_full.jpg",
+            "caption": "Quick study from memory."
+          }
+        ]
+      }
+    ]
+  }
+  
