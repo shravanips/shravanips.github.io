@@ -1672,3 +1672,14 @@
   object-fit: contain;
   opacity: 0.95;
 }
+
+
+/* About me image */
+
+.about-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
