@@ -1,6 +1,7 @@
 [
   {
     "school": "Stevens Institute of Technology",
+    "logo": "/images/sit.png",
     "logoText": "SIT",
     "location": "Hoboken, NJ, USA",
     "degree": "M.S. in Computer Science (Cybersecurity)",
@@ -34,6 +35,7 @@
   },
   {
     "school": "Govt. Institute of Forensic Science",
+    "logo": "/images/ifs.png",
     "logoText": "GIFS",
     "location": "Mumbai, India",
     "degree": "B.S. in Forensic Science (Digital & Cyber Forensics)",

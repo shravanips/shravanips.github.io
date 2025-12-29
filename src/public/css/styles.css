@@ -1636,3 +1636,39 @@
 }
 
 
+/* Intellisys Logo */
+.xp-logo--img{
+  padding: 10px;
+}
+
+.xp-logo--img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.95;
+}
+
+/* University Logo */
+.edu-logo--img{
+  padding: 10px;
+}
+
+.edu-logo--img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+/* Certification logo */
+.cert-logo--img{
+  padding: 10px;
+}
+
+.cert-logo--img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.95;
+}

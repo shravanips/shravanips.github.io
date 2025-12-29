@@ -9,7 +9,15 @@
           {{!-- FRONT --}}
           <div class="flip-face flip-face--front">
             <div class="edu-front">
-              <div class="edu-logo">{{logoText}}</div>
+              {{!-- <div class="edu-logo">{{logoText}}</div> --}}
+              {{#if logo}}
+                <div class="edu-logo edu-logo--img">
+                  <img src="{{logo}}" alt="{{school}} logo" />
+                </div>
+              {{else}}
+                <div class="edu-logo">{{logoText}}</div>
+              {{/if}}
+
 
               <p class="edu-school">{{school}}</p>
               <p class="edu-loc">{{location}}</p>
@@ -67,7 +75,14 @@
           {{!-- Front --}}
           <div class="flip-face flip-face--front">
             <div class="cert-front">
-              <div class="cert-logo">{{logoText}}</div>
+              {{#if logo}}
+                <div class="cert-logo cert-logo--img">
+                  <img src="{{logo}}" alt="{{issuer}} logo" />
+                </div>
+              {{else}}
+                <div class="cert-logo">{{short}}</div>
+              {{/if}}
+
               <h3 class="cert-title">{{title}}</h3>
               <p class="cert-sub">{{issuer}}</p>
               <p class="cert-sub muted">Issued {{issued}}</p>

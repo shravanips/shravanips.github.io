@@ -9,7 +9,15 @@
           <!-- FRONT -->
           <div class="flip-face flip-face--front">
             <div class="xp-front">
-              <div class="xp-logo">{{logoText}}</div>
+              <!--<div class="xp-logo">{{logoText}}</div> -->
+              {{#if logo}}
+                <div class="xp-logo xp-logo--img">
+                  <img src="{{logo}}" alt="{{org}} logo" />
+                </div>
+              {{else}}
+                <div class="xp-logo">{{logoText}}</div>
+              {{/if}}
+
 
               <p class="xp-role">{{role}}</p>
               <p class="xp-org">{{org}}</p>

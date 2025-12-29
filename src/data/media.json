@@ -2,17 +2,129 @@
     "sections": [
       {
         "title": "Photography",
-        "subtitle": "Film-style frames, street, travel, and portraits.",
+        "subtitle": "Film-style frames, street, travel, and portraits || Using iPhone, Samsung & FujiFilm X100VI",
         "items": [
           {
             "id": "ratnagiri-1",
             "type": "photo",
-            "title": "Ratnagiri — Take Me Back",
-            "meta": "Travel · 2024",
-            "thumb": "/assets/media/photos/ratnagiri_thumb.jpg",
-            "src": "/assets/media/photos/ratnagiri_full.jpg",
-            "caption": "A travel frame from where my heart always returns."
+            "title": "Trekking - Shores of New Jersey",
+            "meta": "Trekking · 2025",
+            "thumb": "/assets/media/photos/trek.jpg",
+            "src": "/assets/media/photos/trek.jpg",
+            "caption": "Trek before winter sets in. A peaceful escape by the shore."
+          },
+          
+          {
+            "id": "liberty",
+            "type": "photo",
+            "title": "Statue of Liberty",
+            "meta": "CityLife · 2025",
+            "thumb": "/assets/media/photos/liberty.jpg",
+            "src": "/assets/media/photos/liberty.jpg",
+            "caption": "Captured by FujiFilm X100VI film cam"
+          }, 
+
+          {
+            "id": "aerial_view",
+            "type": "photo",
+            "title": "New York post Snowfall",
+            "meta": "Travel · 2025",
+            "thumb": "/assets/media/photos/aerial.jpg",
+            "src": "/assets/media/photos/aerial.jpg",
+            "caption": "Captured in Samsung S24 Ultra · Phoneography"
+          },
+
+          {
+            "id": "central_park",
+            "type": "photo",
+            "title": "Central Park in Spring",
+            "meta": "CityLife · 2025",
+            "thumb": "/assets/media/photos/central_park_1.jpg",
+            "src": "/assets/media/photos/central_park_1.jpg",
+            "caption": "Captured in FujiFilm X100VI film cam"
+          }, 
+
+          {
+            "id": "swiss_alps",
+            "type": "photo",
+            "title": "Swiss Alps",
+            "meta": "Travel · 2025",
+            "thumb": "/assets/media/photos/swiss.jpg",
+            "src": "/assets/media/photos/swiss.jpg",
+            "caption": "Captured in Samsung S24 Ultra · Phoneography"
+          },
+
+          {
+            "id": "central_park",
+            "type": "photo",
+            "title": "Central Park in Spring",
+            "meta": "CityLife · 2025",
+            "thumb": "/assets/media/photos/central_park_2.jpg",
+            "src": "/assets/media/photos/central_park_2.jpg",
+            "caption": "Captured in Samsung S24 Ultra · Phoneography · Receipe of FujiFilm "
+          },
+
+          {
+            "id": "memorial",
+            "type": "photo",
+            "title": "9/11 Memorial",
+            "meta": "CityLife · 2025",
+            "thumb": "/assets/media/photos/memorial.jpg",
+            "src": "/assets/media/photos/memorial.jpg",
+            "caption": "Captured in FujiFilm · Skyline from Newport on 9/11 Memorial Day "
+          },
+
+          {
+            "id": "fireworks",
+            "type": "photo",
+            "title": "July 4th Fireworks",
+            "meta": "CityLife · 2025",
+            "thumb": "/assets/media/photos/fireworks1.jpg",
+            "src": "/assets/media/photos/fireworks1.jpg",
+            "caption": "Captured in FujiFilm · Skyline from Newport"
+          },
+
+          {
+            "id": "vessel",
+            "type": "photo",
+            "title": "First Visit to The Vessel",
+            "meta": "CityLife · 2025",
+            "thumb": "/assets/media/photos/vessel.jpg",
+            "src": "/assets/media/photos/vessel.jpg",
+            "caption": "Captured in Samsung S24 Ultra · Phoneography"
+          },
+
+          {
+            "id": "spiti_valley",
+            "type": "photo",
+            "title": "Spiti Valley Trek Base Point",
+            "meta": "Trekking · 2024",
+            "thumb": "/assets/media/photos/spiti.jpg",
+            "src": "/assets/media/photos/spiti.jpg",
+            "caption": "Captured in iPhone 14 Pro · Phoneography"
+          },
+
+          {
+            "id": "Ladakh",
+            "type": "photo",
+            "title": "Traveling in Kashmir",
+            "meta": "Travel · 2023",
+            "thumb": "/assets/media/photos/kashmir.jpg",
+            "src": "/assets/media/photos/kashmir.jpg",
+            "caption": "Captured by pranay_cs on his DSLR"
+          },
+
+          {
+            "id": "queens_neckless_end",
+            "type": "photo",
+            "title": "Sunset Marine Drive, Mumbai",
+            "meta": "Undergrad Life Exploration outside University · 2023",
+            "thumb": "/assets/media/photos/marines.jpg",
+            "src": "/assets/media/photos/marines.jpg",
+            "caption": "Captured in iPhone 14 Pro"
           }
+
+
         ]
       },
       {
@@ -22,10 +134,10 @@
           {
             "id": "medium-1",
             "type": "link",
-            "title": "My Medium Profile",
+            "title": "My Medium Profile Blogs",
             "meta": "Medium · 2025",
             "icon": "md",
-            "url": "https://medium.com/@YOUR_HANDLE"
+            "url": "https://medium.com/@shravanips"
           },
           {
             "id": "pdf-1",
