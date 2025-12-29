@@ -1443,3 +1443,196 @@
   }
 }
 
+
+/* ---------------- CONTACT PAGE ---------------- */
+
+.contact .page-title{
+  margin-top: 30px;
+}
+
+.contact-shell{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 18px;
+  align-items: start;
+}
+
+@media (max-width: 980px){
+  .contact-shell{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card wrapper */
+.contact-card{
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: var(--shadow-soft);
+  padding: 18px;
+  backdrop-filter: blur(14px);
+}
+
+/* Form grid */
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 720px){
+  .contact-grid{ grid-template-columns: 1fr; }
+}
+
+.field{ display: flex; flex-direction: column; gap: 8px; }
+.field--full{ grid-column: 1 / -1; }
+
+.field label{
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.78);
+}
+
+.field label span{
+  color: rgba(255, 122, 24, 0.90);
+  font-weight: 900;
+}
+
+.field input,
+.field textarea{
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.35);
+  color: rgba(255,255,255,0.90);
+  padding: 12px 12px;
+  outline: none;
+}
+
+.field textarea{ resize: vertical; }
+
+.field input:focus,
+.field textarea:focus{
+  border-color: rgba(255, 122, 24, 0.45);
+  box-shadow: 0 0 0 3px rgba(255, 122, 24, 0.16);
+}
+
+.contact-submit{
+  margin-top: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 16px;
+  font-weight: 900;
+  cursor: pointer;
+  background: var(--accent);
+  color: #111;
+  box-shadow: 0 10px 26px rgba(255,122,24,0.25);
+}
+
+.contact-submit:hover{ filter: brightness(1.03); }
+
+.contact-note{
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: rgba(255,255,255,0.62);
+}
+
+/* Right side: direct reach cards */
+.reach{
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 18px;
+  backdrop-filter: blur(14px);
+}
+
+.reach-title{
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+
+.reach-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.reach-card{
+  text-decoration: none;
+  color: inherit;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 12px;
+  transition: transform .18s ease, border-color .18s ease;
+}
+
+.reach-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(255,140,0,0.35);
+}
+
+.reach-badge{
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.reach-name{
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.reach-sub{
+  margin-top: 4px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.70);
+  line-height: 1.55;
+}
+
+.reach-cta{
+  margin-top: 8px;
+  font-weight: 900;
+  font-size: 13px;
+  color: rgba(255,255,255,0.88);
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.field input:hover,
+.field textarea:hover{
+  border-color: rgba(255,255,255,0.18);
+}
+
+.field input:focus,
+.field textarea:focus{
+  border-color: rgba(255, 122, 24, 0.55);
+  box-shadow: 0 0 0 3px rgba(255, 122, 24, 0.16);
+}
+
+.reach-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+}
+
+.contact-submit:hover{
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+.contact-submit{
+  transition: transform .15s ease, filter .15s ease;
+}
+
+

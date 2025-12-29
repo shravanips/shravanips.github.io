@@ -84,5 +84,9 @@ router.get("/media", (req, res) => {
   });
 });
 
+router.get("/contact", (req, res) => {
+  res.render("contact", { title: "Contact" });
+});
+
 
 module.exports = router;
