@@ -129,7 +129,7 @@
       },
       {
         "title": "Writing",
-        "subtitle": "Medium posts, PDFs, talk notes, and long-form reflections.",
+        "subtitle": "Medium posts, my blogs on my experience way throughout my journey. You will find here my thoughts, my reflection, my way of looking towards tech, etc.",
         "items": [
           {
             "id": "medium-1",
@@ -139,28 +139,79 @@
             "icon": "md",
             "url": "https://medium.com/@shravanips"
           },
+
           {
-            "id": "pdf-1",
+            "id": "pdf-3",
             "type": "pdf",
-            "title": "Talk Notes (PDF)",
-            "meta": "PDF · 2025",
-            "url": "/assets/media/pdfs/talk-notes.pdf"
+            "title": "A Journey of Heart and Home",
+            "meta": "PDF · 2024",
+            "url": "/assets/media/pdfs/A_JOURNEY_OF_HEART_AND_HOME.pdf"
+          },
+
+          {
+            "id": "pdf-2",
+            "type": "pdf",
+            "title": "Fasten Your Seatbelts",
+            "meta": "PDF · 2022",
+            "url": "/assets/media/pdfs/Fasten_Your_Seatbelts.pdf"
           }
         ]
       },
       {
         "title": "Art & Sketches",
-        "subtitle": "Drawings, paintings, and experiments.",
+        "subtitle": "Drawings, paintings, experiments with water colors, along with the digital art on iPad painting .",
         "items": [
+          {
+            "id": "sketch-4",
+            "type": "photo",
+            "title": "Spidy quick sketch in local train",
+            "meta": "Graphite · 2022",
+            "thumb": "/assets/media/art/spidy.jpg",
+            "src": "/assets/media/art/spidy.jpg",
+            "caption": "When I used to travel for 1 hour in local train to go to college, quick sketch in small drawing notebook, helped me spend my time."
+          },
+
+          {
+            "id": "sketch-5",
+            "type": "photo",
+            "title": "My First IT Fest at Kelkar College, and hosting as Core Committee Member",
+            "meta": "Watercolors · 2020",
+            "thumb": "/assets/media/art/techwizard.jpg",
+            "src": "/assets/media/art/techwizard.jpg",
+            "caption": "Sketched this for Techwizard Fest (Information Technology festival) hosted by Junior College Students at V. G. Vaze Kelkar College."
+          },
+          
           {
             "id": "sketch-1",
             "type": "photo",
-            "title": "Sketchbook Study",
-            "meta": "Graphite · 2023",
-            "thumb": "/assets/media/art/sketch_thumb.jpg",
-            "src": "/assets/media/art/sketch_full.jpg",
-            "caption": "Quick study from memory."
+            "title": "Spiderman",
+            "meta": "Graphite · 2019",
+            "thumb": "/assets/media/art/spiderman_full.jpg",
+            "src": "/assets/media/art/spiderman_full.jpg",
+            "caption": "Very old sketch when my dad made me sit in front of TV to watch Spidy."
+          },
+
+          {
+            "id": "sketch-2",
+            "type": "photo",
+            "title": "Armaan Malik Sketch",
+            "meta": "Graphite · 2019",
+            "thumb": "/assets/media/art/am.jpg",
+            "src": "/assets/media/art/am.jpg",
+            "caption": "Sketched one of my favorite singer back then in 2021 (not current favorite though : > )."
+          },
+
+          {
+            "id": "sketch-3",
+            "type": "photo",
+            "title": "Watercolor Experiment on Mickey, Goofy & Donald",
+            "meta": "Watercolors · 2019",
+            "thumb": "/assets/media/art/mickey.jpg",
+            "src": "/assets/media/art/mickey.jpg",
+            "caption": "Back then when we had Intermediate painting exams, tried something not new, but found it very relaxing."
           }
+
+
         ]
       }
     ]
