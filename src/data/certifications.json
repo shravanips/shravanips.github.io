@@ -158,5 +158,23 @@
       "Turning learnings into next steps for projects"
     ],
     "link": "https://developers.google.com/profile/badges/events/io/2025/registered"
+  },
+
+  {
+      "id": "chatgpt-cybersecurity-2026",
+      "title": "Applied ChatGPT for Cybersecurity",
+      "issuer": "LinkedIn Learning",
+      "logo": "/images/linkedin-learning.png",
+      "issued": "Jan 2026",
+      "logoText": "LI",
+      "featured": false,
+      "skills": [
+        "Incident Response",
+        "Artificial Intelligence (AI)",
+        "AI-assisted threat analysis",
+        "Security automation workflows"
+      ],
+      "link": "https://www.linkedin.com/in/shravanisawant03/overlay/Certifications/453902490/treasury/?profileId=ACoAAEMvpH4Bvwpb4H1LWocQUtSuIFFPjaqWGL8"
+    
   }
 ]

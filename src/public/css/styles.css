@@ -1683,3 +1683,7 @@
   border-radius: 18px;
 }
 
+.navbar a[href*="resume"] {
+  font-weight: 600;
+  border-bottom: 2px solid #ff8a00;
+}
