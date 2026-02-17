@@ -2,8 +2,18 @@
     "sections": [
       {
         "title": "Photography",
-        "subtitle": "Film-style frames, street, travel, and portraits || Using iPhone, Samsung & FujiFilm X100VI",
+        "subtitle": "Film-style frames, street, travel, and portraits || Using iPhone, Samsung & FujiFilm X-E5",
         "items": [
+          {
+            "id": "Jan1",
+            "type": "photo",
+            "title": "Walking around the Neighborhood",
+            "meta": "First Day · 2026",
+            "thumb": "/assets/media/photos/Jan1.jpg",
+            "src": "/assets/media/photos/Jan1.jpg",
+            "caption": "First Day captured on FujiFilm X-E5, a new chapter begins with a walk around the neighborhood, fun fact you can also see Edwin Hall's peak (Stevens)."
+          },
+
           {
             "id": "ratnagiri-1",
             "type": "photo",
