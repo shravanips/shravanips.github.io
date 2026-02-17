@@ -27,6 +27,14 @@ app.set("views", path.join(__dirname, "views"));
 
 app.use(express.static(path.join(__dirname, "public")));
 
+// Global template variables (available in ALL handlebars views/partials)
+app.use((req, res, next) => {
+  res.locals.year = new Date().getFullYear();
+  res.locals.location = "Hoboken, NJ, USA";
+  res.locals.lastUpdated = "Feb 2026"; // change whenever you want
+  next();
+});
+
 app.use("/", indexRoutes);
 app.use("/", pagesRoutes);
 app.use("/", mediaRoutes);

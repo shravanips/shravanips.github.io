@@ -1691,5 +1691,32 @@
   font-size: 14px;
 }
 
+/* Footer center stack (location + map) */
+.site-footer__center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-location{
+  opacity: 0.9;
+}
+
+/* Visitor map sizing */
+.visitor-map-link{
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.visitor-map-img{
+  width: 150px;      /* tweak: 130–180 */
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
 
 
