@@ -30,7 +30,13 @@ app.use(express.static(path.join(__dirname, "public")));
 // Global template variables (available in ALL handlebars views/partials)
 app.use((req, res, next) => {
   res.locals.year = new Date().getFullYear();
-  res.locals.location = "Hoboken, NJ, USA";
+
+  // Used by main.handlebars footer: {{footerLocation}}
+  res.locals.footerLocation = "Hoboken, NJ, USA";
+
+  // Optional: keep for future use
+  res.locals.location = res.locals.footerLocation;
+
   res.locals.lastUpdated = "Feb 2026"; // change whenever you want
   next();
 });

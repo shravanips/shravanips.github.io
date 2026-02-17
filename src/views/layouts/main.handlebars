@@ -16,16 +16,30 @@
 
     {{#unless hideFooter}}
       <footer class="site-bottom">
-        <div class="site-bottom__left">© Shravani Sawant — 2025</div>
-        <div class="site-bottom__center">{{footerLocation}}</div>
+        <div class="site-bottom__left">© Shravani Sawant — {{year}}</div>
+
+        <div class="site-bottom__center">
+          <span>{{footerLocation}}</span>
+
+          <a href="https://mapmyvisitors.com/web/1c2lo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="visitor-map-link"
+              aria-label="Visitor map (MapMyVisitors)">
+            <img
+              src="https://mapmyvisitors.com/map.png?d=rnDJEKVcKL8rs8_QkxKtBp1O7JDYQ2JnD-osDCBeD8&cl=ffffff"
+              alt="Visitor map" />
+          </a>
+        </div>
 
         <div class="site-bottom__right">
-          {{#if social.linkedin}}<a class="icon-pill" href="{{social.linkedin}}" target="_blank" rel="noreferrer">in</a>{{/if}}
-          {{#if social.github}}<a class="icon-pill" href="{{social.github}}" target="_blank" rel="noreferrer">gh</a>{{/if}}
-          {{#if social.medium}}<a class="icon-pill" href="{{social.medium}}" target="_blank" rel="noreferrer">md</a>{{/if}}
+          {{#if social.linkedin}}<a class="icon-pill" href="{{social.linkedin}}" target="_blank" rel="noopener noreferrer">in</a>{{/if}}
+          {{#if social.github}}<a class="icon-pill" href="{{social.github}}" target="_blank" rel="noopener noreferrer">gh</a>{{/if}}
+          {{#if social.medium}}<a class="icon-pill" href="{{social.medium}}" target="_blank" rel="noopener noreferrer">md</a>{{/if}}
         </div>
       </footer>
     {{/unless}}
+
 
     <script src="/js/main.js"></script>
     <script src="/js/media.js" defer></script>
