@@ -1683,16 +1683,13 @@
   border-radius: 18px;
 }
 
-/* Edited on Feb 17 */
-.navbar a[href*="Resume"],
-.navbar a[href*="resume"] {
-  color: #ffffff !important;
-  text-decoration: none !important;
-  font-weight: 500;
+/* Fallback: force any link inside the center nav pill to look like other tabs */
+.nav__center a,
+.nav__center a:visited {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.navbar a[href*="Resume"]:hover,
-.navbar a[href*="resume"]:hover {
-  color: #ff8a00 !important;
-}
+
 

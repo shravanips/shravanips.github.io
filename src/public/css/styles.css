@@ -1683,8 +1683,13 @@
   border-radius: 18px;
 }
 
-.nav .nav__link:visited {
-  color: inherit;
+/* Fallback: force any link inside the center nav pill to look like other tabs */
+.nav__center a,
+.nav__center a:visited {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
 }
+
 
 
