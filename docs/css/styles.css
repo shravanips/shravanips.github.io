@@ -1452,3 +1452,14 @@
     .page-title{ font-size: 42px; }
   }
   
+  .about-map img {
+    width: 320px;        /* increase this to 350 / 400 if you want bigger */
+    max-width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-map img:hover {
+    transform: scale(1.03);
+  }
+  
