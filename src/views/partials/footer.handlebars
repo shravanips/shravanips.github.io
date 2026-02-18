@@ -5,26 +5,33 @@
       © Shravani Sawant — {{year}}
     </div>
 
-    <!-- ✅ ONE center column only -->
     <div class="site-footer__center">
-      <div class="footer-location">{{location}}</div>
+      <div class="site-footer__location">{{footerLocation}}</div>
 
       <a href="https://mapmyvisitors.com/web/1c2lo"
          target="_blank"
          rel="noopener noreferrer"
-         class="visitor-map-link">
+         class="visitor-map-link"
+         aria-label="Visitor map (MapMyVisitors)">
         <img
           src="https://mapmyvisitors.com/map.png?d=rnDJEKVcKL8rs8_QkxKtBp1O7JDYQ2JnD-osDCBeD8&cl=ffffff"
           alt="Visitor map"
           class="visitor-map-img"
+          loading="lazy"
         />
       </a>
     </div>
 
     <div class="site-footer__right">
-      <a class="social-pill" href="{{social.linkedin}}" target="_blank" rel="noopener noreferrer">in</a>
-      <a class="social-pill" href="{{social.github}}" target="_blank" rel="noopener noreferrer">gh</a>
-      <a class="social-pill" href="{{social.medium}}" target="_blank" rel="noopener noreferrer">md</a>
+      {{#if social.linkedin}}
+        <a class="icon-pill" href="{{social.linkedin}}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+      {{/if}}
+      {{#if social.github}}
+        <a class="icon-pill" href="{{social.github}}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">gh</a>
+      {{/if}}
+      {{#if social.medium}}
+        <a class="icon-pill" href="{{social.medium}}" target="_blank" rel="noopener noreferrer" aria-label="Medium">md</a>
+      {{/if}}
     </div>
 
   </div>
