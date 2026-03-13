@@ -19,14 +19,14 @@ const shared = {
   }
 };
 
-router.get("/experience", (req, res) => {
-  res.render("experience", {
-    title: "Experience",
-    active: "experience",
-    experience,
-    ...shared
-  });
-});
+//router.get("/experience", (req, res) => {
+  //res.render("experience", {
+    //title: "Experience",
+    //active: "experience",
+    //experience,
+    //...shared
+  //});
+//});
 
 router.get("/education", (req, res) => {
   res.render("education", {
