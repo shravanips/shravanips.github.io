@@ -220,6 +220,7 @@ body::before{
     gap: 72px;
     align-items: center;
     min-height: auto;
+    padding-bottom: 42px;
   }
   
   .home-text{
