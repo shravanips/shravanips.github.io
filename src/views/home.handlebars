@@ -1,11 +1,35 @@
 <section class="home-hero">
   <div class="home-hero__inner">
+    <p class="home-hero__eyebrow">AI Security · Cybersecurity · Reliable Systems</p>
+
     <h1 class="home-hero__title">{{home.titleLine}}</h1>
+    <p class="home-hero__nickname">{{home.nickname}}</p>
     <h2 class="home-hero__headline">{{home.headline}}</h2>
 
-    <p class="home-hero__sub">{{home.p1}}</p>
-    <p class="home-hero__sub">{{home.p2}}</p>
-    <p class="home-hero__sub">{{home.p3}}</p>
+    <p class="home-hero__lead">{{home.p1}}</p>
+
+    <div class="home-hero__actions">
+      <a href="/publications" class="btn btn--hero">View Research</a>
+      <a href="/contact" class="btn btn--ghost">Let’s Connect</a>
+    </div>
+
+    <div class="home-focus">
+      <span class="home-focus__pill">AI Security & Safety</span>
+      <span class="home-focus__pill">Reinforcement Learning Systems</span>
+      <span class="home-focus__pill">AI & Machine Learning Systems</span>
+      <span class="home-focus__pill">Cybersecurity & Data Analysis</span>
+    </div>
+
+    <div class="home-hero__note">
+      <p>
+        {{home.researchPrefix}}
+        <a href="{{home.advisorLink}}" target="_blank" rel="noopener noreferrer">
+          {{home.advisorName}}
+        </a>
+        {{home.researchSuffix}}
+      </p>
+      <p>{{home.p3}}</p>
+    </div>
   </div>
 
   <div class="home-bottom">
