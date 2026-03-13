@@ -18,21 +18,17 @@
     </div>
 
     {{#if home.interestTitle}}
-      <p class="home-section-label">{{home.interestTitle}}</p>
+      <p class="home-section-label">
+        {{home.interestTitle}}
+        <span class="home-interests-inline">
+          {{#each home.interests}}
+            <span class="home-interest-item">
+              {{this}}{{#unless @last}}, {{/unless}}
+            </span>
+          {{/each}}
+        </span>
+      </p>
     {{/if}}
-
-    {{#if home.interests}}
-      <div class="home-focus">
-        {{#each home.interests}}
-          <span class="home-focus__pill">{{this}}</span>
-        {{/each}}
-      </div>
-    {{/if}}
-
-    <div class="home-hero__actions">
-      <a href="/publications" class="btn btn--hero">View Research</a>
-      <a href="/contact" class="btn btn--ghost">Let’s Connect</a>
-    </div>
 
     <div class="home-hero__extra">
       <p>
@@ -43,7 +39,7 @@
       </p>
 
       <p>
-        I also enjoy trekking and reading books — small things that keep me curious, grounded, and creatively inspired.
+        I also enjoy travelling, writing and reading books — small things that keep me curious, grounded, and creatively inspired.
       </p>
     </div>
   </div>
