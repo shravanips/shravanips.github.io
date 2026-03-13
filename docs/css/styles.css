@@ -197,7 +197,7 @@ body::before{
    .page-home .container{
     max-width: 1320px;
     min-height: calc(100vh - 78px);
-    padding: 42px 36px 22px;
+    padding: 42px 36px 30px;
     display: flex;
     justify-content: center;
   }
@@ -206,22 +206,20 @@ body::before{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 28px;
-    min-height: calc(100vh - 160px);
+    gap: 0;
   }
   
   .home-hero__inner{
     width: 100%;
     max-width: 1180px;
+    margin: 0 auto;
   }
   
   .home-layout{
     display: grid;
     grid-template-columns: minmax(0, 1fr) 380px;
     gap: 72px;
-    align-items: center;
-    min-height: auto;
-    padding-bottom: 24px;
+    align-items: start;
   }
   
   .home-text{
@@ -267,10 +265,12 @@ body::before{
   }
   
   .home-photo{
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
+    position: sticky;
+    top: 120px;
   }
   
   .home-photo img{
@@ -283,23 +283,20 @@ body::before{
     box-shadow: 0 20px 55px rgba(0,0,0,0.38);
   }
   
-  .home-photo{
-    position: sticky;
-    top: 120px;
-  }
-  
   .home-bottom{
-    margin-top: auto;
+    width: 100%;
+    max-width: 1180px;
+    margin: 48px auto 0;
     padding-top: 28px;
     border-top: 1px solid rgba(255,255,255,0.08);
+  
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 14px;
+  
     color: var(--muted);
     font-size: 14px;
-    max-width: 1180px;
-    width: 100%;
   }
   
   .home-bottom__left{ justify-self: start; }
@@ -314,7 +311,6 @@ body::before{
     .home-layout{
       grid-template-columns: 1fr;
       gap: 32px;
-      min-height: auto;
     }
   
     .home-text{
@@ -322,6 +318,8 @@ body::before{
     }
   
     .home-photo{
+      position: relative;
+      top: auto;
       justify-content: flex-start;
     }
   
@@ -333,7 +331,7 @@ body::before{
   
   @media (max-width: 900px){
     .page-home .container{
-      padding: 30px 20px 22px;
+      padding: 30px 20px 24px;
     }
   
     .home-hero__title{
@@ -353,6 +351,7 @@ body::before{
     .home-bottom{
       grid-template-columns: 1fr;
       gap: 10px;
+      margin-top: 36px;
     }
   
     .home-bottom__center,
