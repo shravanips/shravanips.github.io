@@ -197,7 +197,7 @@ body::before{
    .page-home .container{
     max-width: 1320px;
     min-height: calc(100vh - 78px);
-    padding: 42px 36px 10px;
+    padding: 42px 36px 28px;
     display: flex;
     justify-content: center;
   }
@@ -206,7 +206,7 @@ body::before{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 24px;
   }
   
   .home-hero__inner{
@@ -286,8 +286,9 @@ body::before{
   .home-bottom{
     width: 100%;
     max-width: 1180px;
-    margin: 48px auto 0;
-    padding-top: 28px;
+    margin: 28px auto 0;
+    padding-top: 24px;
+    padding-bottom: 6px;
     border-top: 1px solid rgba(255,255,255,0.08);
   
     display: grid;
@@ -297,7 +298,6 @@ body::before{
   
     color: var(--muted);
     font-size: 14px;
-    padding-bottom: 0;
   }
   
   .home-bottom__left{ justify-self: start; }
@@ -335,6 +335,10 @@ body::before{
       padding: 30px 20px 24px;
     }
   
+    .home-hero{
+      gap: 18px;
+    }
+  
     .home-hero__title{
       font-size: clamp(28px, 7vw, 40px);
       margin-bottom: 18px;
@@ -352,7 +356,8 @@ body::before{
     .home-bottom{
       grid-template-columns: 1fr;
       gap: 10px;
-      margin-top: 36px;
+      margin-top: 24px;
+      padding-top: 20px;
     }
   
     .home-bottom__center,
@@ -360,7 +365,6 @@ body::before{
       justify-self: start;
     }
   }
-
 /* =========================================================
    HEADERS
    ========================================================= */
