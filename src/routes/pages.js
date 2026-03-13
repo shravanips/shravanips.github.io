@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const education = require("../data/education.json");
-const experience = require("../data/experience.json");
+//const experience = require("../data/experience.json");
 const publications = require("../data/publications.json");
 const certifications = require("../data/certifications.json");
 const projects = require("../data/projects.json");
