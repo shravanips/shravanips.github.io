@@ -223,7 +223,7 @@ body::before{
 }
 
 .home-hero__intro{
-  max-width: 900px;
+  max-width: 850px; 
   display: grid;
   gap: 20px;
 }
