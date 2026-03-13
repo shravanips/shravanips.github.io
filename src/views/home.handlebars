@@ -1,45 +1,40 @@
 <section class="home-hero">
   <div class="home-hero__inner">
     <h1 class="home-hero__title">{{home.titleLine}}</h1>
-    <p class="home-hero__nickname">{{home.nickname}}</p>
 
-    <h2 class="home-hero__headline">{{home.headline}}</h2>
-
-    <p class="home-hero__lead">{{home.p1}}</p>
-
-    <div class="home-hero__note">
+    <div class="home-hero__intro">
       <p>
-        {{home.researchPrefix}}
-        <a href="{{home.advisorLink}}" target="_blank" rel="noopener noreferrer">
-          {{home.advisorName}}
-        </a>
-        {{home.researchSuffix}}
+        I’m Shravani Sawant — though you can also call me <strong>Shravu</strong> or <strong>Aani</strong>.
+        I’m an MS Computer Science (Cybersecurity) student at Stevens Institute of Technology, and I’m deeply interested in building systems that are thoughtful, secure, and dependable in real-world settings.
       </p>
-    </div>
 
-    {{#if home.interestTitle}}
-      <p class="home-section-label">
-        {{home.interestTitle}}
-        <span class="home-interests-inline">
-          {{#each home.interests}}
-            <span class="home-interest-item">
-              {{this}}{{#unless @last}}, {{/unless}}
-            </span>
-          {{/each}}
-        </span>
-      </p>
-    {{/if}}
-
-    <div class="home-hero__extra">
       <p>
-        Outside of research, I love capturing moments using my Fujifilm camera. I usually walk around my neighborhood in Hoboken on Sundays, or head to nearby places to click street photographs. You can explore some of my work in the
-        <a href="/media">Media section</a>
-        or visit my photography page
+        My work lives at the intersection of <strong>AI security</strong>, <strong>cybersecurity</strong>, and
+        <strong>reliable machine learning infrastructure</strong>. I enjoy taking technical ideas from research or coursework
+        and shaping them into practical systems, experiments, and tools that can actually be used, tested, and improved.
+      </p>
+
+      <p>
+        Currently, I work on research advised by
+        <a href="{{home.advisorLink}}" target="_blank" rel="noopener noreferrer">{{home.advisorName}}</a>
+        at the IntelliSys Lab, where I study how reinforcement learning systems behave under partial failures and design experiments to evaluate system stability and performance degradation.
+      </p>
+
+      <p>
+        My broader research interests include AI Security, Reinforcement Learning, AI Systems, Machine Learning,
+        High Performance Computing, and Cybersecurity with Data Analysis. I’m especially drawn to problems where systems,
+        security, and intelligent behavior come together.
+      </p>
+
+      <p>
+        Outside of research, I love capturing moments using my Fujifilm camera. I usually walk around my neighborhood in Hoboken on Sundays,
+        or head to nearby places to click street photographs. You can explore some of that work in the
+        <a href="/media">Media section</a> or visit my photography page
         <a href="https://www.instagram.com/shravu.frames/" target="_blank" rel="noopener noreferrer">@shravu.frames</a>.
       </p>
 
       <p>
-        I also enjoy travelling, writing and reading books — small things that keep me curious, grounded, and creatively inspired.
+        I also enjoy travelling, writing, and reading books — small things that keep me curious, grounded, and creatively inspired.
       </p>
     </div>
   </div>
