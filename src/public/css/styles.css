@@ -197,7 +197,7 @@ body::before{
    .page-home .container{
     max-width: 1320px;
     min-height: calc(100vh - 78px);
-    padding: 42px 36px 30px;
+    padding: 42px 36px 10px;
     display: flex;
     justify-content: center;
   }
@@ -297,6 +297,7 @@ body::before{
   
     color: var(--muted);
     font-size: 14px;
+    padding-bottom: 0;
   }
   
   .home-bottom__left{ justify-self: start; }
