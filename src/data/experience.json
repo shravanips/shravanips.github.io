@@ -1,16 +1,5 @@
 [
   {
-    "org": "needs to be updated",
-    "logoText": "IL",
-    "logo": "/images/abc.png",
-    "role": "needs to be updated",
-    "location": "Hoboken, NJ",
-    "dates": "needs to be updated",
-    "highlights": [
-      "Studying reinforcement learning (RL) system behavior under partial failures, focusing on stability and performance degradation trends.",
-      "Designing repeatable experiment pipelines (runs, seeds, configs) with consistent logging to compare fault conditions across evaluations.",
-      "Analyzing training metrics and failure modes to understand how system reliability changes under resource drops and partial outages.",
-      "Collaborating with the lab team on research-driven implementation, evaluation, and documentation of findings."
-    ]
+    
   }
 ]
