@@ -197,7 +197,7 @@ body::before{
    .page-home .container{
     max-width: 1320px;
     min-height: calc(100vh - 78px);
-    padding: 42px 36px 28px;
+    padding: 42px 36px 18px;
     display: flex;
     justify-content: center;
   }
@@ -286,9 +286,8 @@ body::before{
   .home-bottom{
     width: 100%;
     max-width: 1180px;
-    margin: 28px auto 0;
-    padding-top: 24px;
-    padding-bottom: 6px;
+    margin: 20px auto 0;
+    padding: 18px 0;
     border-top: 1px solid rgba(255,255,255,0.08);
   
     display: grid;
@@ -356,8 +355,8 @@ body::before{
     .home-bottom{
       grid-template-columns: 1fr;
       gap: 10px;
-      margin-top: 24px;
-      padding-top: 20px;
+      margin-top: 20px;
+      padding: 18px 0;
     }
   
     .home-bottom__center,
