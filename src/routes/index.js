@@ -11,10 +11,9 @@ router.get("/", (req, res) => {
 
     home: {
       titleLine: "Hi, I’m Shravani 👋",
-      nickname:
-        "You can also call me Shravu or Aani.",
+      nickname: "You can also call me Shravu or Aani.",
       headline:
-        "I love building secure, reliable intelligent systems at the intersection of AI security, cybersecurity, and research-driven engineering.",
+        "I build secure, reliable intelligent systems across AI security, cybersecurity, and dependable machine learning infrastructure.",
       p1:
         "I’m an MS Computer Science (Cybersecurity) student at Stevens Institute of Technology, focused on building security-conscious systems, applied research tools, and dependable technical solutions.",
       researchPrefix:
@@ -25,8 +24,6 @@ router.get("/", (req, res) => {
         "https://intellisys.haow.us/haowang/",
       researchSuffix:
         " at the IntelliSys Lab, where I study how reinforcement learning systems behave under partial failures and design experiments to evaluate system stability and performance degradation.",
-      p2:
-        "Beyond research, I enjoy working on my own projects (be it solo or team), turning research ideas into practical tools, and building systems that connect strong technical foundations with societal impact.",
       interestTitle:
         "My research interests include:",
       interests: [
