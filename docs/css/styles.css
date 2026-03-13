@@ -215,7 +215,7 @@ body::before{
 }
 
 .home-hero__title{
-  font-size: clamp(32px, 3.2vw, 54px);
+  font-size: clamp(28px, 3.2vw, 54px);
   line-height: 1.08;
   margin: 0 0 22px;
   font-weight: 700;
