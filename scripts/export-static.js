@@ -12,7 +12,7 @@ const BASE = "http://127.0.0.1:3000";
 // Add every route you want hosted:
 const ROUTES = [
   { route: "/", out: "index.html" },
-  { route: "/experience", out: "experience/index.html" },
+  //{ route: "/experience", out: "experience/index.html" },
   { route: "/education", out: "education/index.html" },
   { route: "/publications", out: "publications/index.html" },
   { route: "/media", out: "media/index.html" },
