@@ -1,0 +1,418 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Shravani Pranay Sawant — AI safety, AI security,
+        trustworthy AI, distributed RL research and engineering.">
+
+  <title>TrapTrack | Shravani Pranay Sawant</title>
+
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <script defer src="/assets/main.js"></script>
+
+  <script>
+    try {
+      document.documentElement.dataset.theme =
+        localStorage.getItem("portfolio-theme") || "light";
+    } catch (error) {}
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="/">श्राvani साvant</a>
+
+    <nav class="nav" aria-label="Main navigation">
+      
+        <a href="/"
+          >
+          Home
+        </a>
+      
+        <a href="/research/"
+          >
+          Research
+        </a>
+      
+        <a href="/publications/"
+          >
+          Publications
+        </a>
+      
+        <a href="/projects/"
+          aria-current="page">
+          Projects
+        </a>
+      
+        <a href="/writing/"
+          >
+          Writing
+        </a>
+      
+        <a href="/about/"
+          >
+          About
+        </a>
+      
+        <a href="/misc/"
+          >
+          Misc
+        </a>
+      
+        <a href="/cv/"
+          >
+          CV
+        </a>
+      
+    </nav>
+
+    <div class="actions">
+      <button
+        class="icon-button"
+        data-search-open
+        title="Search (Ctrl/⌘ K)"
+        aria-label="Search">
+        ⌕
+      </button>
+
+      <button
+        class="icon-button"
+        data-theme-toggle
+        title="Toggle color theme"
+        aria-label="Toggle color theme">
+        ◐
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+  
+  <div class="page-title">
+
+    <div class="eyebrow">
+      SHRAVANI / TRAPTRACK
+    </div>
+
+    <h1>TrapTrack</h1>
+
+    <p class="muted">Web privacy and tracker analysis</p>
+
+  </div>
+
+      <article class="research-detail project-detail prose">
+  
+        <a class="back" href="/projects/">
+          ← All projects
+        </a>
+  
+        <div class="research-detail-meta">
+          <span class="kicker">
+            Privacy Engineering
+             · Academic Security Project
+          </span>
+        </div>
+  
+        <p class="research-detail-intro">
+          An automated web privacy analysis framework that examines tracking behavior, network requests, and browser storage before and after cookie-consent interactions.
+        </p>
+  
+        
+        <section class="research-detail-section">
+          <h2>Overview</h2>
+          <p>TrapTrack is a browser-based privacy evaluation framework designed to investigate how websites collect and transmit information during user browsing sessions. It combines browser automation, network traffic interception, storage inspection, and privacy-risk reporting to compare website behavior across different consent states.</p>
+        </section>
+      
+  
+        
+        <section class="research-detail-section">
+          <h2>Problem &amp; Motivation</h2>
+          <p>Cookie-consent interfaces are intended to give users control over tracking, but websites may initiate network requests, set cookies, or communicate with third parties regardless of the selected consent option. TrapTrack investigates these behaviors by collecting evidence before and after user interactions with consent banners.</p>
+        </section>
+      
+  
+        
+          <section class="research-detail-section">
+            <h2>System Architecture</h2>
+            <ul>
+              <li>Website Configuration: Loads target websites and consent scenarios from a structured input file.</li><li>Browser Automation: Uses Playwright and Chromium to conduct controlled browsing sessions.</li><li>Traffic Interception: Uses MITMProxy to log outbound network requests and third-party communication.</li><li>Storage Analysis: Examines changes to cookies and browser storage across consent states.</li><li>Tracker Analysis: Identifies third-party services and evaluates their geographic locations.</li><li>Privacy Scoring: Calculates a TrapScore based on observed tracking behavior.</li><li>Reporting Layer: Generates HTML reports with screenshots, storage comparisons, tracker information, and risk indicators.</li>
+            </ul>
+          </section>
+        
+  
+        
+          <section class="research-detail-section">
+            <h2>Implementation &amp; Contributions</h2>
+            <ul>
+              <li>Automated browser workflows using Playwright to reproduce website interactions.</li><li>Integrated MITMProxy for network traffic capture and analysis.</li><li>Collected and compared browser storage and network activity before and after consent interactions.</li><li>Developed an experimental workflow for testing multiple websites and consent scenarios.</li><li>Included third-party tracker analysis, geographic mapping, and privacy-risk reporting.</li><li>Generated reports summarizing observed tracking behavior and consent-related differences.</li>
+            </ul>
+          </section>
+        
+  
+        
+          <section class="research-detail-section">
+            <h2>Results &amp; Learnings</h2>
+            <ul>
+              <li>Created a reproducible workflow for comparing privacy behavior across website consent states.</li><li>Produced reports containing network activity, browser storage differences, screenshots, and tracker information.</li><li>Developed a framework for investigating whether website behavior aligns with user consent choices.</li>
+            </ul>
+          </section>
+        
+  
+        <section class="research-detail-section">
+          <h2>Technologies</h2>
+          
+  <div class="tags">
+    <span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">MITMProxy</span><span class="tag">Chromium</span><span class="tag">Web Privacy</span><span class="tag">Tracker Analysis</span>
+  </div>
+
+        </section>
+  
+        
+            <section class="research-detail-section">
+              <h2>Resources</h2>
+              
+  <div class="links">
+
+    
+
+    <a href="https://github.com/shravanips/TrapTrack_X_Shravani"
+    
+    target="_blank" rel="noopener noreferrer">
+    GitHub ↗
+  </a>
+
+  </div>
+
+            </section>
+          
+  
+      </article>
+      
+</main>
+
+<footer class="container footer">
+
+  <span>
+    © 2026 Shravani Pranay Sawant
+  </span>
+
+  <span>
+    <a href="https://github.com/shravanips"
+    
+    target="_blank" rel="noopener noreferrer">
+    GitHub
+  </a>
+    · <a href="https://www.linkedin.com/in/shravanisawant03/"
+    
+    target="_blank" rel="noopener noreferrer">
+    LinkedIn
+  </a>
+     · <a href="https://www.instagram.com/shravu.frames/"
+    
+    target="_blank" rel="noopener noreferrer">
+    Instagram
+  </a>
+    · <a href="mailto:shravanipps03@gmail.com"
+    
+    >
+    Email
+  </a>
+    · Built with curiosity ☕
+  </span>
+
+  
+    <span class="last-updated">
+      Last updated: October 24, 2026
+    </span>
+  
+
+</footer>
+
+<dialog id="site-search" aria-label="Search pages">
+
+  <div class="section-header">
+    <h2>Jump to…</h2>
+
+    <button
+      class="icon-button"
+      data-search-close
+      aria-label="Close">
+      ✕
+    </button>
+  </div>
+
+  <input
+    aria-label="Search pages"
+    placeholder="Search research, projects, pages…">
+
+  <div class="search-results">
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/">
+        Home
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/">
+        Research
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/">
+        Publications
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/">
+        Projects
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/writing/">
+        Writing
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/about/">
+        About
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/misc/">
+        Misc
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/cv/">
+        CV
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/llm-prompt-injection/">
+        LLM Prompt Injection &amp; Jailbreaks
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/distributed-rl-fault-tolerance/">
+        Learning-Aware Fault Tolerance in Distributed Reinforcement Learning Systems
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/sk-scout/">
+        SK_Scout: Behavioral Analysis of GitHub Open-Source Ecosystem
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/gender-specificity-amid-toys/">
+        Gender Specificity Amid Toys
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/blockchain-interoperability/">
+        Blockchain Interoperability Using Hash Time Locks
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/sk-scout/">
+        SK_Scout: Behavioral Analysis of GitHub Open-Source Ecosystem
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/personaguard/">
+        PersonaGuard
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/traptrack/">
+        TrapTrack
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/aegisai/">
+        AegisAI
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/seri/">
+        SERI
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/heritage-search/">
+        AI-Powered Heritage Search Engine
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/sk-scout/">
+        SK_Scout
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/nyc-arrest-data-analysis/">
+        NYC Arrest Data Visualization &amp; Analysis
+      </a>
+    
+  </div>
+
+  <p class="small muted">
+    Shortcut: Ctrl/⌘ + K
+  </p>
+
+</dialog>
+
+</body>
+</html>

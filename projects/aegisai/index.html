@@ -1,0 +1,401 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Shravani Pranay Sawant — AI safety, AI security,
+        trustworthy AI, distributed RL research and engineering.">
+
+  <title>AegisAI | Shravani Pranay Sawant</title>
+
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <script defer src="/assets/main.js"></script>
+
+  <script>
+    try {
+      document.documentElement.dataset.theme =
+        localStorage.getItem("portfolio-theme") || "light";
+    } catch (error) {}
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="/">श्राvani साvant</a>
+
+    <nav class="nav" aria-label="Main navigation">
+      
+        <a href="/"
+          >
+          Home
+        </a>
+      
+        <a href="/research/"
+          >
+          Research
+        </a>
+      
+        <a href="/publications/"
+          >
+          Publications
+        </a>
+      
+        <a href="/projects/"
+          aria-current="page">
+          Projects
+        </a>
+      
+        <a href="/writing/"
+          >
+          Writing
+        </a>
+      
+        <a href="/about/"
+          >
+          About
+        </a>
+      
+        <a href="/misc/"
+          >
+          Misc
+        </a>
+      
+        <a href="/cv/"
+          >
+          CV
+        </a>
+      
+    </nav>
+
+    <div class="actions">
+      <button
+        class="icon-button"
+        data-search-open
+        title="Search (Ctrl/⌘ K)"
+        aria-label="Search">
+        ⌕
+      </button>
+
+      <button
+        class="icon-button"
+        data-theme-toggle
+        title="Toggle color theme"
+        aria-label="Toggle color theme">
+        ◐
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+  
+  <div class="page-title">
+
+    <div class="eyebrow">
+      SHRAVANI / AEGISAI
+    </div>
+
+    <h1>AegisAI</h1>
+
+    <p class="muted">LLM-assisted cybersecurity analysis</p>
+
+  </div>
+
+      <article class="research-detail project-detail prose">
+  
+        <a class="back" href="/projects/">
+          ← All projects
+        </a>
+  
+        <div class="research-detail-meta">
+          <span class="kicker">
+            AI Security
+             · Cybersecurity Engineering Project
+          </span>
+        </div>
+  
+        <p class="research-detail-intro">
+          A security analysis pipeline that combines phishing, malicious-file, and suspicious-URL detection signals with LLM-assisted explanations.
+        </p>
+  
+        
+        <section class="research-detail-section">
+          <h2>Overview</h2>
+          <p>AegisAI explores the use of language models to support cybersecurity analysis. Rather than relying entirely on LLM-generated judgments, the system combines structured detection signals with language-model reasoning to help interpret potentially malicious files, URLs, and phishing indicators.</p>
+        </section>
+      
+  
+        
+        <section class="research-detail-section">
+          <h2>Problem &amp; Motivation</h2>
+          <p>Cybersecurity investigations often involve multiple signals from different detection techniques. These signals can be difficult to interpret together, while LLM-generated explanations may be unreliable when they are not grounded in technical evidence. AegisAI explores how structured security observations and language-model explanations can complement one another.</p>
+        </section>
+      
+  
+        
+          <section class="research-detail-section">
+            <h2>System Architecture</h2>
+            <ul>
+              <li>Input Analysis: Accepts security-relevant inputs such as suspicious URLs, files, or phishing indicators.</li><li>Signal Extraction: Collects structured indicators from security checks and detection rules.</li><li>Normalization Layer: Organizes detection results into a consistent representation.</li><li>LLM Reasoning Layer: Uses the collected security observations to generate contextual explanations.</li><li>Analysis Output: Presents relevant indicators and supporting explanations for further review.</li>
+            </ul>
+          </section>
+        
+  
+        
+          <section class="research-detail-section">
+            <h2>Implementation &amp; Contributions</h2>
+            <ul>
+              <li>Developed Python-based components for processing security analysis outputs.</li><li>Combined rule-based detection observations with LLM-assisted interpretation.</li><li>Normalized signals associated with phishing, malicious files, and suspicious URLs.</li><li>Compared language-model explanations with structured security findings.</li><li>Explored the reliability and limitations of LLM-assisted cybersecurity reasoning.</li>
+            </ul>
+          </section>
+        
+  
+        
+          <section class="research-detail-section">
+            <h2>Results &amp; Learnings</h2>
+            <ul>
+              <li>Developed an experimental workflow for combining structured threat indicators with natural-language security explanations.</li><li>Explored evidence-grounded reasoning as a way to support security analysis.</li>
+            </ul>
+          </section>
+        
+  
+        <section class="research-detail-section">
+          <h2>Technologies</h2>
+          
+  <div class="tags">
+    <span class="tag">Python</span><span class="tag">LLM</span><span class="tag">Phishing Detection</span><span class="tag">URL Analysis</span><span class="tag">Malware Analysis</span><span class="tag">Threat Analysis</span>
+  </div>
+
+        </section>
+  
+        
+  
+      </article>
+      
+</main>
+
+<footer class="container footer">
+
+  <span>
+    © 2026 Shravani Pranay Sawant
+  </span>
+
+  <span>
+    <a href="https://github.com/shravanips"
+    
+    target="_blank" rel="noopener noreferrer">
+    GitHub
+  </a>
+    · <a href="https://www.linkedin.com/in/shravanisawant03/"
+    
+    target="_blank" rel="noopener noreferrer">
+    LinkedIn
+  </a>
+     · <a href="https://www.instagram.com/shravu.frames/"
+    
+    target="_blank" rel="noopener noreferrer">
+    Instagram
+  </a>
+    · <a href="mailto:shravanipps03@gmail.com"
+    
+    >
+    Email
+  </a>
+    · Built with curiosity ☕
+  </span>
+
+  
+    <span class="last-updated">
+      Last updated: October 24, 2026
+    </span>
+  
+
+</footer>
+
+<dialog id="site-search" aria-label="Search pages">
+
+  <div class="section-header">
+    <h2>Jump to…</h2>
+
+    <button
+      class="icon-button"
+      data-search-close
+      aria-label="Close">
+      ✕
+    </button>
+  </div>
+
+  <input
+    aria-label="Search pages"
+    placeholder="Search research, projects, pages…">
+
+  <div class="search-results">
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/">
+        Home
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/">
+        Research
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/">
+        Publications
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/">
+        Projects
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/writing/">
+        Writing
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/about/">
+        About
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/misc/">
+        Misc
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/cv/">
+        CV
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/llm-prompt-injection/">
+        LLM Prompt Injection &amp; Jailbreaks
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/distributed-rl-fault-tolerance/">
+        Learning-Aware Fault Tolerance in Distributed Reinforcement Learning Systems
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/sk-scout/">
+        SK_Scout: Behavioral Analysis of GitHub Open-Source Ecosystem
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/gender-specificity-amid-toys/">
+        Gender Specificity Amid Toys
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/blockchain-interoperability/">
+        Blockchain Interoperability Using Hash Time Locks
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/sk-scout/">
+        SK_Scout: Behavioral Analysis of GitHub Open-Source Ecosystem
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/personaguard/">
+        PersonaGuard
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/traptrack/">
+        TrapTrack
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/aegisai/">
+        AegisAI
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/seri/">
+        SERI
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/heritage-search/">
+        AI-Powered Heritage Search Engine
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/sk-scout/">
+        SK_Scout
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/nyc-arrest-data-analysis/">
+        NYC Arrest Data Visualization &amp; Analysis
+      </a>
+    
+  </div>
+
+  <p class="small muted">
+    Shortcut: Ctrl/⌘ + K
+  </p>
+
+</dialog>
+
+</body>
+</html>

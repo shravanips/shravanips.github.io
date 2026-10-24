@@ -1,0 +1,418 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Shravani Pranay Sawant — AI safety, AI security,
+        trustworthy AI, distributed RL research and engineering.">
+
+  <title>SERI | Shravani Pranay Sawant</title>
+
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <script defer src="/assets/main.js"></script>
+
+  <script>
+    try {
+      document.documentElement.dataset.theme =
+        localStorage.getItem("portfolio-theme") || "light";
+    } catch (error) {}
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="/">श्राvani साvant</a>
+
+    <nav class="nav" aria-label="Main navigation">
+      
+        <a href="/"
+          >
+          Home
+        </a>
+      
+        <a href="/research/"
+          >
+          Research
+        </a>
+      
+        <a href="/publications/"
+          >
+          Publications
+        </a>
+      
+        <a href="/projects/"
+          aria-current="page">
+          Projects
+        </a>
+      
+        <a href="/writing/"
+          >
+          Writing
+        </a>
+      
+        <a href="/about/"
+          >
+          About
+        </a>
+      
+        <a href="/misc/"
+          >
+          Misc
+        </a>
+      
+        <a href="/cv/"
+          >
+          CV
+        </a>
+      
+    </nav>
+
+    <div class="actions">
+      <button
+        class="icon-button"
+        data-search-open
+        title="Search (Ctrl/⌘ K)"
+        aria-label="Search">
+        ⌕
+      </button>
+
+      <button
+        class="icon-button"
+        data-theme-toggle
+        title="Toggle color theme"
+        aria-label="Toggle color theme">
+        ◐
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+  
+  <div class="page-title">
+
+    <div class="eyebrow">
+      SHRAVANI / SERI
+    </div>
+
+    <h1>SERI</h1>
+
+    <p class="muted">Scam Exposure Risk Index</p>
+
+  </div>
+
+      <article class="research-detail project-detail prose">
+  
+        <a class="back" href="/projects/">
+          ← All projects
+        </a>
+  
+        <div class="research-detail-meta">
+          <span class="kicker">
+            Security &amp; GRC
+             · Academic Machine Learning Project
+          </span>
+        </div>
+  
+        <p class="research-detail-intro">
+          A hybrid financial scam detection prototype combining behavioral risk scoring with TF-IDF and logistic regression to classify suspicious messages.
+        </p>
+  
+        
+        <section class="research-detail-section">
+          <h2>Overview</h2>
+          <p>SERI, the Scam Exposure Risk Index, is a financial cybersecurity prototype that evaluates potentially fraudulent text using a combination of interpretable behavioral indicators and machine learning. The system analyzes scam-related language, estimates risk through a trained classifier, and combines the signals into an overall risk category.</p>
+        </section>
+      
+  
+        
+        <section class="research-detail-section">
+          <h2>Problem &amp; Motivation</h2>
+          <p>Financial scams frequently rely on urgency, psychological manipulation, account-related threats, and deceptive financial incentives. Detection systems must recognize these patterns while producing explanations that users can understand. SERI explores a hybrid scoring approach that combines explicit behavioral indicators with statistical text classification.</p>
+        </section>
+      
+  
+        
+          <section class="research-detail-section">
+            <h2>System Architecture</h2>
+            <ul>
+              <li>Text Input: Accepts messages, emails, or conversations for scam-risk analysis.</li><li>Behavioral Lexicon Engine: Identifies urgency, manipulation, financial intent, account takeover, and scam-related indicators.</li><li>SERI Scoring: Produces an interpretable behavioral risk score between 0 and 100.</li><li>Text Vectorization: Uses TF-IDF features derived from unigrams and bigrams.</li><li>Machine Learning Classifier: Applies logistic regression to estimate scam probability.</li><li>Hybrid Risk Engine: Combines behavioral scoring and machine learning predictions.</li><li>Streamlit Interface: Displays risk categories, model predictions, and behavioral indicators.</li>
+            </ul>
+          </section>
+        
+  
+        
+          <section class="research-detail-section">
+            <h2>Implementation &amp; Contributions</h2>
+            <ul>
+              <li>Developed a behavioral scoring framework for financial scam indicators.</li><li>Designed lexicon-based features for identifying urgency, manipulation, and financial deception.</li><li>Built a text classification pipeline using TF-IDF and logistic regression.</li><li>Organized and processed datasets for phishing, social engineering, and financial scam analysis.</li><li>Combined model probability with behavioral scoring to generate risk categories.</li><li>Developed a Streamlit application for interactive text evaluation.</li>
+            </ul>
+          </section>
+        
+  
+        
+          <section class="research-detail-section">
+            <h2>Results &amp; Learnings</h2>
+            <ul>
+              <li>Built a hybrid prototype classifying messages as Safe, Suspicious, or High-Risk Fraud.</li><li>Implemented a behavioral scoring system with a 0–100 risk scale.</li><li>Integrated model predictions and interpretable behavioral signals into a single analysis interface.</li><li>Produced a reproducible academic prototype for exploring financial scam detection.</li>
+            </ul>
+          </section>
+        
+  
+        <section class="research-detail-section">
+          <h2>Technologies</h2>
+          
+  <div class="tags">
+    <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">TF-IDF</span><span class="tag">Logistic Regression</span><span class="tag">Streamlit</span><span class="tag">Financial Cybersecurity</span><span class="tag">Risk Scoring</span>
+  </div>
+
+        </section>
+  
+        
+            <section class="research-detail-section">
+              <h2>Resources</h2>
+              
+  <div class="links">
+
+    
+
+    <a href="https://github.com/shravanips/SERIxShravani"
+    
+    target="_blank" rel="noopener noreferrer">
+    GitHub ↗
+  </a>
+
+  </div>
+
+            </section>
+          
+  
+      </article>
+      
+</main>
+
+<footer class="container footer">
+
+  <span>
+    © 2026 Shravani Pranay Sawant
+  </span>
+
+  <span>
+    <a href="https://github.com/shravanips"
+    
+    target="_blank" rel="noopener noreferrer">
+    GitHub
+  </a>
+    · <a href="https://www.linkedin.com/in/shravanisawant03/"
+    
+    target="_blank" rel="noopener noreferrer">
+    LinkedIn
+  </a>
+     · <a href="https://www.instagram.com/shravu.frames/"
+    
+    target="_blank" rel="noopener noreferrer">
+    Instagram
+  </a>
+    · <a href="mailto:shravanipps03@gmail.com"
+    
+    >
+    Email
+  </a>
+    · Built with curiosity ☕
+  </span>
+
+  
+    <span class="last-updated">
+      Last updated: October 24, 2026
+    </span>
+  
+
+</footer>
+
+<dialog id="site-search" aria-label="Search pages">
+
+  <div class="section-header">
+    <h2>Jump to…</h2>
+
+    <button
+      class="icon-button"
+      data-search-close
+      aria-label="Close">
+      ✕
+    </button>
+  </div>
+
+  <input
+    aria-label="Search pages"
+    placeholder="Search research, projects, pages…">
+
+  <div class="search-results">
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/">
+        Home
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/">
+        Research
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/">
+        Publications
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/">
+        Projects
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/writing/">
+        Writing
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/about/">
+        About
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/misc/">
+        Misc
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/cv/">
+        CV
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/llm-prompt-injection/">
+        LLM Prompt Injection &amp; Jailbreaks
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/distributed-rl-fault-tolerance/">
+        Learning-Aware Fault Tolerance in Distributed Reinforcement Learning Systems
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/research/sk-scout/">
+        SK_Scout: Behavioral Analysis of GitHub Open-Source Ecosystem
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/gender-specificity-amid-toys/">
+        Gender Specificity Amid Toys
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/blockchain-interoperability/">
+        Blockchain Interoperability Using Hash Time Locks
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/publications/sk-scout/">
+        SK_Scout: Behavioral Analysis of GitHub Open-Source Ecosystem
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/personaguard/">
+        PersonaGuard
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/traptrack/">
+        TrapTrack
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/aegisai/">
+        AegisAI
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/seri/">
+        SERI
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/heritage-search/">
+        AI-Powered Heritage Search Engine
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/sk-scout/">
+        SK_Scout
+      </a>
+    
+      <a
+        data-search-item
+        class="search-item"
+        href="/projects/nyc-arrest-data-analysis/">
+        NYC Arrest Data Visualization &amp; Analysis
+      </a>
+    
+  </div>
+
+  <p class="small muted">
+    Shortcut: Ctrl/⌘ + K
+  </p>
+
+</dialog>
+
+</body>
+</html>
