@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shravanips.github.io/sitemap.xml
